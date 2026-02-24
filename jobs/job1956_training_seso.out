@@ -1,0 +1,148 @@
+tensor([[1544, 6619,  284,  607,  546,  465, 1492]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+Próximos 30 tokens gerados pelo modelo:
+He talked to her about his book, and she said, "I'm not going to read it."
+
+"I'm not going to read
+Próximo token gerado pelo modelo:
+,
+Top 5 tokens:
+Token: ,               | prob: 0.295125 | id: 11
+Token:  and            | prob: 0.173887 | id: 290
+Token: .               | prob: 0.090169 | id: 13
+Token:  about          | prob: 0.040581 | id: 546
+Token:  "              | prob: 0.040149 | id: 366
+
+
+
+tensor([[3347, 1965,  262, 6253,  546,  607]])
+['She', 'Ġasked', 'Ġthe', 'Ġdoctor', 'Ġabout', 'Ġher']
+Próximos 30 tokens gerados pelo modelo:
+She asked the doctor about her condition, and he said she was fine.
+
+"I'm fine," she said. "I'm fine."
+Próximo token gerado pelo modelo:
+ condition
+Top 5 tokens:
+Token:  condition      | prob: 0.036675 | id: 4006
+Token:  own            | prob: 0.022232 | id: 898
+Token:  symptoms       | prob: 0.021659 | id: 7460
+Token:  pregnancy      | prob: 0.019554 | id: 10241
+Token:  health         | prob: 0.016958 | id: 1535
+
+
+
+tensor([[  464,  1772,  6619,   284, 24799,   546,   465]])
+['The', 'Ġauthor', 'Ġtalked', 'Ġto', 'ĠSara', 'Ġabout', 'Ġhis']
+Próximos 30 tokens gerados pelo modelo:
+The author talked to Sara about his new book, "The Art of the Deal," and how he's been working on it for the past year.
+Próximo token gerado pelo modelo:
+ new
+Top 5 tokens:
+Token:  new            | prob: 0.072297 | id: 649
+Token:  experience     | prob: 0.058561 | id: 1998
+Token:  work           | prob: 0.040639 | id: 670
+Token:  experiences    | prob: 0.035735 | id: 6461
+Token:  book           | prob: 0.028615 | id: 1492
+
+
+
+tensor([[ 7554,  3088,   284, 11508,  5335,   286,   465,  1842,   290,  3181,
+         12734,   329,   220]])
+['John', 'Ġtried', 'Ġto', 'Ġconvince', 'ĠMary', 'Ġof', 'Ġhis', 'Ġlove', 'Ġand', 'Ġbrought', 'Ġflowers', 'Ġfor', 'Ġ']
+Próximos 30 tokens gerados pelo modelo:
+John tried to convince Mary of his love and brought flowers for  him. Mary was so upset that she went to the bathroom and found a flower
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.164676 | id: 1849
+Token: ________        | prob: 0.151813 | id: 2602
+Token: urn             | prob: 0.078342 | id: 700
+Token: _______         | prob: 0.072838 | id: 37405
+Token: _____           | prob: 0.050906 | id: 29343
+
+
+
+tensor([[24119,  9431,  1757,   286,   607,  1842]])
+['Mary', 'Ġconvinced', 'ĠJohn', 'Ġof', 'Ġher', 'Ġlove']
+Próximos 30 tokens gerados pelo modelo:
+Mary convinced John of her love for him, and she was able to convince him to marry her.
+
+John's love for her was so strong
+Próximo token gerado pelo modelo:
+ for
+Top 5 tokens:
+Token:  for            | prob: 0.500550 | id: 329
+Token:  and            | prob: 0.132916 | id: 290
+Token:  of             | prob: 0.091751 | id: 286
+Token: ,               | prob: 0.081637 | id: 11
+Token: .               | prob: 0.050853 | id: 13
+
+
+
+tensor([[10374,   441,  2486,   373,   262,  1893,   286,   262]])
+['Bar', 'ack', 'ĠObama', 'Ġwas', 'Ġthe', 'Ġpresident', 'Ġof', 'Ġthe']
+Próximos 30 tokens gerados pelo modelo:
+Barack Obama was the president of the United States. He was the first African-American president. He was the first African-American president of the
+Próximo token gerado pelo modelo:
+ United
+Top 5 tokens:
+Token:  United         | prob: 0.700175 | id: 1578
+Token:  U              | prob: 0.016768 | id: 471
+Token:  University     | prob: 0.012958 | id: 2059
+Token:  US             | prob: 0.011177 | id: 1294
+Token:  American       | prob: 0.010949 | id: 1605
+
+
+
+tensor([[8001, 9542, 4430,  318,  262, 2214,  286, 2050,  326]])
+['Art', 'ificial', 'Ġintelligence', 'Ġis', 'Ġthe', 'Ġfield', 'Ġof', 'Ġstudy', 'Ġthat']
+Próximos 30 tokens gerados pelo modelo:
+Artificial intelligence is the field of study that has been around for a while now. It is a field that has been around for a while now.
+Próximo token gerado pelo modelo:
+ has
+Top 5 tokens:
+Token:  has            | prob: 0.168304 | id: 468
+Token:  is             | prob: 0.118956 | id: 318
+Token:  will           | prob: 0.058256 | id: 481
+Token: 's              | prob: 0.027016 | id: 338
+Token:  we             | prob: 0.020956 | id: 356
+
+
+
+tensor([[5195,  318,  262, 6766, 4171,   30]])
+['Why', 'Ġis', 'Ġthe', 'Ġsky', 'Ġblue', '?']
+Próximos 30 tokens gerados pelo modelo:
+Why is the sky blue?
+
+The sky blue is a color that is often associated with the sky. It is a color that is often associated
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.256015 | id: 198
+Token:  It             | prob: 0.050056 | id: 632
+Token:  The            | prob: 0.038787 | id: 383
+Token:  Is             | prob: 0.031602 | id: 1148
+Token:  Why            | prob: 0.030486 | id: 4162
+
+
+
+tensor([[1532, 3362,  338, 3656,  318, 5335,   11, 5335,  338, 5229,  318]])
+['If', 'ĠPaul', "'s", 'Ġwife', 'Ġis', 'ĠMary', ',', 'ĠMary', "'s", 'Ġhusband', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+If Paul's wife is Mary, Mary's husband is Paul.
+
+The Bible says that Paul is the son of Mary, and that Mary is
+Próximo token gerado pelo modelo:
+ Paul
+Top 5 tokens:
+Token:  Paul           | prob: 0.143314 | id: 3362
+Token:  John           | prob: 0.049504 | id: 1757
+Token:  Jesus          | prob: 0.045196 | id: 5803
+Token:  the            | prob: 0.043491 | id: 262
+Token:  Joseph         | prob: 0.037337 | id: 7212
+
+
+

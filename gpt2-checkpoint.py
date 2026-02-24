@@ -40,10 +40,10 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-IMAGES_DIR = Path("images/gptOSS")
+IMAGES_DIR = Path("images/gpt2")
 IMAGES_DIR.mkdir(exist_ok=True)
 
-pretrained_weights = 'openai/gpt-oss-20b'
+pretrained_weights = 'gpt2'
 model = AutoModelForCausalLM.from_pretrained(pretrained_weights,
                                              output_hidden_states=True,
                                              output_attentions=True)
@@ -100,7 +100,7 @@ for ex_id in range(len(sentences)):
     print(input_ids)
     print(tokens)
 
-    max_l = 120
+    max_l =30
     output_ids = model.generate(input_ids, max_length=max_l)
 
     print(f"Próximos {max_l} tokens gerados pelo modelo:\n{tokenizer.decode(output_ids[0], skip_special_tokens=True)}")
@@ -122,7 +122,7 @@ for ex_id in range(len(sentences)):
         print(f"Token: {tokenizer.decode([idx.item()]):15} | prob: {val.item():.6f} | id: {idx.item()}")
 
     print(f"\n\n")
-    # pega topk mais provaveis para plotar
+    # pega top5 mais provaveis para plotar
     yax = [float(predicted_target[id].detach()) for id in topk_idx]
     xax = [tokenizer.decode(id) for id in topk_idx] 
 

@@ -9,6 +9,5 @@
 #SBATCH --cpus-per-task=8
 # train.sh
 
-srun -N1 singularity exec --nv container.sif python3 gpt_example.py
-srun -N1 singularity exec --nv container.sif python3 bert_example-checkpoint.py
+srun -N1 singularity exec --nv container.sif python3 gptOSS_example.py
 
