@@ -1,0 +1,93 @@
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+(12, 12, 7, 7)
+tensor([[1544, 6619,  284,  607,  546,  465, 1492]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+He talked to her about his book, and she said, "I'm not going to read it."
+
+"I'm not going to read
+[366 546  13 290  11]
+, 11
+[0.0401485413312912, 0.040581218898296356, 0.09016948193311691, 0.17388713359832764, 0.29512473940849304] [' "', ' about', '.', ' and', ',']
+(12, 7, 7)
+['She', 'Ġasked', 'Ġthe', 'Ġdoctor', 'Ġabout', 'Ġ', 'Ġback', 'ache']
+(12, 12, 8, 8)
+tensor([[3347, 1965,  262, 6253,  546,  220,  736, 4891]])
+['She', 'Ġasked', 'Ġthe', 'Ġdoctor', 'Ġabout', 'Ġ', 'Ġback', 'ache']
+She asked the doctor about  backache.
+
+"I'm not sure what it is," he said.
+
+"I'm not sure
+[287 326 290  11  13]
+. 13
+[0.014007765799760818, 0.01769086718559265, 0.19496074318885803, 0.2631481885910034, 0.2983703017234802] [' in', ' that', ' and', ',', '.']
+(12, 8, 8)
+['The', 'Ġauthor', 'Ġtalked', 'Ġto', 'ĠSara', 'Ġabout', 'Ġhis']
+(12, 12, 7, 7)
+tensor([[  464,  1772,  6619,   284, 24799,   546,   465]])
+['The', 'Ġauthor', 'Ġtalked', 'Ġto', 'ĠSara', 'Ġabout', 'Ġhis']
+The author talked to Sara about his new book, "The Art of the Deal," and how he's been working on it for the past year.
+[1492 6461  670 1998  649]
+ new 649
+[0.028614714741706848, 0.03573542460799217, 0.04063931480050087, 0.058560583740472794, 0.07229722291231155] [' book', ' experiences', ' work', ' experience', ' new']
+(12, 7, 7)
+['John', 'Ġtried', 'Ġto', 'Ġconvince', 'ĠMary', 'Ġof', 'Ġhis', 'Ġlove', 'Ġand', 'Ġbrought', 'Ġflowers', 'Ġfor', 'Ġ']
+(12, 12, 13, 13)
+tensor([[ 7554,  3088,   284, 11508,  5335,   286,   465,  1842,   290,  3181,
+         12734,   329,   220]])
+['John', 'Ġtried', 'Ġto', 'Ġconvince', 'ĠMary', 'Ġof', 'Ġhis', 'Ġlove', 'Ġand', 'Ġbrought', 'Ġflowers', 'Ġfor', 'Ġ']
+John tried to convince Mary of his love and brought flowers for  him. Mary was so upset that she went to the bathroom and found a flower
+[29343 37405   700  2602  1849]
+  1849
+[0.050905849784612656, 0.07283780723810196, 0.07834174484014511, 0.15181280672550201, 0.1646762490272522] ['_____', '_______', 'urn', '________', '\xa0']
+(12, 13, 13)
+['Mary', 'Ġconvinced', 'ĠJohn', 'Ġof', 'Ġ', 'Ġlove']
+(12, 12, 6, 6)
+tensor([[24119,  9431,  1757,   286,   220,  1842]])
+['Mary', 'Ġconvinced', 'ĠJohn', 'Ġof', 'Ġ', 'Ġlove']
+Mary convinced John of  love to go to the church. He was a good man, and he was a good man to John. He was a
+[ 13 326  11 290 284]
+ to 284
+[0.04099726304411888, 0.045247770845890045, 0.09077755361795425, 0.1061369925737381, 0.1617087572813034] ['.', ' that', ',', ' and', ' to']
+(12, 6, 6)
+['Bar', 'ack', 'ĠObama', 'Ġwas', 'Ġthe', 'Ġpresident', 'Ġof', 'Ġthe']
+(12, 12, 8, 8)
+tensor([[10374,   441,  2486,   373,   262,  1893,   286,   262]])
+['Bar', 'ack', 'ĠObama', 'Ġwas', 'Ġthe', 'Ġpresident', 'Ġof', 'Ġthe']
+Barack Obama was the president of the United States. He was the first African-American president. He was the first African-American president of the
+[1605 1294 2059  471 1578]
+ United 1578
+[0.010949015617370605, 0.01117664109915495, 0.012958109378814697, 0.016768144443631172, 0.7001751661300659] [' American', ' US', ' University', ' U', ' United']
+(12, 8, 8)
+['Art', 'ificial', 'Ġintelligence', 'Ġis', 'Ġthe', 'Ġfield', 'Ġof', 'Ġstudy', 'Ġthat']
+(12, 12, 9, 9)
+tensor([[8001, 9542, 4430,  318,  262, 2214,  286, 2050,  326]])
+['Art', 'ificial', 'Ġintelligence', 'Ġis', 'Ġthe', 'Ġfield', 'Ġof', 'Ġstudy', 'Ġthat']
+Artificial intelligence is the field of study that has been around for a while now. It is a field that has been around for a while now.
+[356 338 481 318 468]
+ has 468
+[0.020955607295036316, 0.02701573073863983, 0.058255840092897415, 0.11895642429590225, 0.16830413043498993] [' we', "'s", ' will', ' is', ' has']
+(12, 9, 9)
+['Why', 'Ġis', 'Ġthe', 'Ġsky', 'Ġblue', '?']
+(12, 12, 6, 6)
+tensor([[5195,  318,  262, 6766, 4171,   30]])
+['Why', 'Ġis', 'Ġthe', 'Ġsky', 'Ġblue', '?']
+Why is the sky blue?
+
+The sky blue is a color that is often associated with the sky. It is a color that is often associated
+[4162 1148  383  632  198]
+
+ 198
+[0.030485840514302254, 0.03160221874713898, 0.038786664605140686, 0.050055623054504395, 0.25601544976234436] [' Why', ' Is', ' The', ' It', '\n']
+(12, 6, 6)
+['If', 'ĠPaul', "'s", 'Ġwife', 'Ġis', 'ĠMary', ',', 'ĠMary', "'s", 'Ġhusband', 'Ġis']
+(12, 12, 11, 11)
+tensor([[1532, 3362,  338, 3656,  318, 5335,   11, 5335,  338, 5229,  318]])
+['If', 'ĠPaul', "'s", 'Ġwife', 'Ġis', 'ĠMary', ',', 'ĠMary', "'s", 'Ġhusband', 'Ġis']
+If Paul's wife is Mary, Mary's husband is Paul.
+
+The Bible says that Paul is the son of Mary, and that Mary is
+[7212  262 5803 1757 3362]
+ Paul 3362
+[0.037337325513362885, 0.043490536510944366, 0.04519609734416008, 0.04950356110930443, 0.14331436157226562] [' Joseph', ' the', ' Jesus', ' John', ' Paul']
+(12, 11, 11)

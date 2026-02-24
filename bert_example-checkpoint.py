@@ -71,8 +71,8 @@ MODELS = [(BertModel,       BertTokenizer,       'bert-base-uncased'),
 BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNextSentencePrediction,
                       BertForSequenceClassification, BertForTokenClassification, BertForQuestionAnswering]
 
-OUTPUT_DIR = Path("images")
-OUTPUT_DIR.mkdir(exist_ok=True)
+IMAGES_DIR = Path("images/bert")
+IMAGES_DIR.mkdir(exist_ok=True)
 
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
@@ -135,6 +135,9 @@ targets[8] = (2, 7) # Paul, Mary
 candidates[8] = ('paul', 'mary')
 
 for ex_id in range(1 , 9):
+    OUTPUT_DIR = IMAGES_DIR / str(ex_id)
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    
     sentence = sentences[ex_id]
 
     tokens = tokenizer.tokenize(sentence)
