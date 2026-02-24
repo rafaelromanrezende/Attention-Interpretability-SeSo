@@ -33,6 +33,8 @@ from transformers import (
     BertForQuestionAnswering
 )
 
+from pathlib import Path
+
 
 def plot_attention_heatmap(att, s_position, t_positions, tokens_list):
     cls_att = np.flip(att[:, s_position, t_positions], axis=0)
@@ -68,6 +70,9 @@ MODELS = [(BertModel,       BertTokenizer,       'bert-base-uncased'),
 # Each architecture is provided with several class for fine-tuning on down-stream tasks, e.g.
 BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNextSentencePrediction,
                       BertForSequenceClassification, BertForTokenClassification, BertForQuestionAnswering]
+
+OUTPUT_DIR = Path("images")
+OUTPUT_DIR.mkdir(exist_ok=True)
 
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
@@ -152,11 +157,18 @@ for ex_id in range(1 , 9):
     print("Previsão bruta da frase:", tokenizer.decode(top_pred_id))
     
     print("Palavra na posição analisada (src):", tokenizer.decode([tf_input_ids[src[ex_id]]]))
-    
+
     t1_id = tf_input_ids[targets[ex_id][0]]
     t2_id = tf_input_ids[targets[ex_id][1]]
     print(f"Target 1 ({tokenizer.decode([t1_id])}) prob no src: {predicted_target[t1_id]:.6f}")
     print(f"Target 2 ({tokenizer.decode([t2_id])}) prob no src: {predicted_target[t2_id]:.6f}")
+
+    k=5
+    topk_vals, topk_idx = torch.topk(predicted_target, k)
+
+    print(f"Top {k} value")
+    for idx, val in zip(topk_idx, topk_vals):
+        print(f"Token: {tokenizer.decode([idx.item()]):15} | prob: {val.item():.6f} | id: {idx.item()}")
 
     word_a, word_b = candidates[ex_id]
     id_a = tokenizer.encode([word_a])[1] # Pega o ID da palavra
@@ -182,7 +194,7 @@ for ex_id in range(1 , 9):
     )
     sns.despine(fig=fig, ax=None, top=True, right=True, left=True, bottom=False, offset=None, trim=False)
     ax.set_yticks([])
-    plt.savefig('rat_bert_bar_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /'rat_bert_bar_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     s_pos_corrigida = src[ex_id] - 1
     t_pos_corrigidas = (targets[ex_id][0] - 1, targets[ex_id][1] - 1)
@@ -202,7 +214,7 @@ for ex_id in range(1 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig('rat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /'rat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     #descomente isso se quiser usar a média das cabeças em cada camada
     # res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
@@ -239,7 +251,7 @@ for ex_id in range(1 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig('res_fat_bert_att_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /'res_fat_bert_att_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
     joint_attentions = compute_joint_attention(res_att_mat, add_residual=False)
     joint_att_adjmat, joint_labels_to_index = get_adjmat(mat=joint_attentions, input_tokens=tokens)
@@ -258,7 +270,7 @@ for ex_id in range(1 , 9):
     tokens_list=tokens 
     )
 
-    plt.savefig('res_jat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /'res_jat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
     
