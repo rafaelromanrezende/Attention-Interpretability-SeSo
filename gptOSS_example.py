@@ -91,7 +91,7 @@ for ex_id in range(len(sentences)):
     all_hidden_states, all_attentions =  model_outputs['hidden_states'], model_outputs['attentions'] 
 
     # transforma cada camada em array para poder operar depois
-    _attentions = [att.detach().numpy() for att in all_attentions] # transforma em array
+    _attentions = [att.float().cpu().detach().numpy() for att in all_attentions] # transforma em array
     # 12 camadas, 1 batch, 12 cabeças, LXL
 
     # mata a camada de batch
@@ -109,9 +109,8 @@ for ex_id in range(len(sentences)):
 
     #softmask da útlima coluna
     predicted_target = torch.nn.Softmax(dim=0)(output[-1,:])
-
     # converte para array e pega o argmax(maior logit) para o último token
-    previewd = np.argmax(predicted_target.detach().numpy(), axis=-1)
+    previewd = np.argmax(predicted_target.float().cpu().detach().numpy(), axis=-1)
     print(f"Próximo token gerado pelo modelo:\n{tokenizer.decode(previewd)}")
 
     k=5

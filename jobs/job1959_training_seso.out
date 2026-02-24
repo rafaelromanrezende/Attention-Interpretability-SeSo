@@ -1,0 +1,201 @@
+tensor([[ 2066, 25665,   316,  1335,  1078,  1232,  2392]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+Próximos 120 tokens gerados pelo modelo:
+He talked to her about his book on how I can talk to people; you can come. I said that it is an honest thing to say: I am the one. I think, I do not mind to go. We are going to talk about them, and we can just, but we can't. This is my new home.
+
+I think. Maybe, you want to know who was able to do, with other things? The answer might, the answer is you. However, there's a small twist we just, we are not the same. Perhaps the difference between the question and the answer
+Próximo token gerado pelo modelo:
+,
+Top 5 tokens:
+Token: ."              | prob: 0.144531 | id: 3692
+Token: ,               | prob: 0.144531 | id: 11
+Token: .               | prob: 0.112305 | id: 13
+Token:  and            | prob: 0.068359 | id: 326
+Token: ,"              | prob: 0.038818 | id: 3532
+
+
+
+tensor([[13684,  7747,   290, 12342,  1078,  1335]])
+['She', 'Ġasked', 'Ġthe', 'Ġdoctor', 'Ġabout', 'Ġher']
+Próximos 120 tokens gerados pelo modelo:
+She asked the doctor about her surgery plan.**  
+  *Correct.*  
+- **She asked the doctor about a plan to surgery.**  
+  *Wrong* – “plan to” fits a verb, not the noun *surgery.*  
+
+So the rule: “to” is used when the object is a verb (*to run*, *to dance*). “For” is used when the object is a noun (*plan for the future*, *plan for surgery*). When a verb is needed, use *to*.
+
+---
+
+### The “t” inside “to”
+
+English
+Próximo token gerado pelo modelo:
+ symptoms
+Top 5 tokens:
+Token:  symptoms       | prob: 0.101562 | id: 16629
+Token:  condition      | prob: 0.079102 | id: 7060
+Token:  medication     | prob: 0.065918 | id: 26547
+Token:  diagnosis      | prob: 0.061768 | id: 28756
+Token:  health         | prob: 0.061768 | id: 3230
+
+
+
+tensor([[  976,  4892, 25665,   316, 54883,  1078,  1232]])
+['The', 'Ġauthor', 'Ġtalked', 'Ġto', 'ĠSara', 'Ġabout', 'Ġhis']
+Próximos 120 tokens gerados pelo modelo:
+The author talked to Sara about his plans to travel to San Francisco and New York. He also explained the process for a business trip. He then mentioned that he is in charge of setting them all that a. He is the one they use.
+
+A comprehensive outline for the interview of a student named Xianming Zhou, based on the content of the conversation you've shared, may look like this:
+
+**Interview Title:** Navigating Career Transitions: A Conversation with Xianming Zhou
+
+**Introduction:**
+- Brief introduction of the interview set up and the subject Xianming Zhou.
+- Overview
+Próximo token gerado pelo modelo:
+ concerns
+Top 5 tokens:
+Token:  feelings       | prob: 0.027954 | id: 22353
+Token:  concerns       | prob: 0.027954 | id: 16098
+Token:  new            | prob: 0.019165 | id: 620
+Token:  work           | prob: 0.014038 | id: 1101
+Token:  plan           | prob: 0.014038 | id: 3496
+
+
+
+tensor([[21020, 10471,   316, 52216, 14322,   328,  1232,  3047,   326, 11311,
+         18887,   395,   220]])
+['John', 'Ġtried', 'Ġto', 'Ġconvince', 'ĠMary', 'Ġof', 'Ġhis', 'Ġlove', 'Ġand', 'Ġbrought', 'Ġflowers', 'Ġfor', 'Ġ']
+Próximos 120 tokens gerados pelo modelo:
+John tried to convince Mary of his love and brought flowers for 24 days, but the final part of the song is missing. We have to guess the missing part. So the answer is the last words of the song: "and then the love". But no.
+
+Thus, answer: "Because Mary has been absent." But no.
+
+Ok, I'll answer "He wrote a poem that said that Mary was crazy? No.
+
+Time to answer: "I think the missing part is 'She decided not to answer' but maybe they want the lyric "I am a clown." So answer: "
+Próximo token gerado pelo modelo:
+2
+Top 5 tokens:
+Token: 2               | prob: 0.107422 | id: 17
+Token: 3               | prob: 0.094727 | id: 18
+Token: 10              | prob: 0.088867 | id: 702
+Token: 5               | prob: 0.088867 | id: 20
+Token: 1               | prob: 0.083496 | id: 16
+
+
+
+tensor([[61508, 42865,  5928,   328,  1335,  3047]])
+['Mary', 'Ġconvinced', 'ĠJohn', 'Ġof', 'Ġher', 'Ġlove']
+Próximos 120 tokens gerados pelo modelo:
+Mary convinced John of her love, but she didn't say her name."
+
+Here’s a polished and engaging rewrite of the text, ready for a captivating short form social media post or reel:
+
+---
+
+🎭 **Love in the Time of Suspicion** 🎭
+
+“Mary convinced John of her love, but she never said her name.” Whoever heard this could swear it was a line from a classic movie—yet it was a true story that came to life in the bustling streets of New York in the 1960s.
+
+It all began when Jimmie C, the charismatic yet notorious
+Próximo token gerado pelo modelo:
+."
+Top 5 tokens:
+Token: ."              | prob: 0.147461 | id: 3692
+Token:  for            | prob: 0.138672 | id: 395
+Token: .               | prob: 0.114746 | id: 13
+Token: ,               | prob: 0.107422 | id: 11
+Token: "               | prob: 0.044922 | id: 1
+
+
+
+tensor([[ 4622,   552, 16995,   673,   290, 10464,   328,   290]])
+['Bar', 'ack', 'ĠObama', 'Ġwas', 'Ġthe', 'Ġpresident', 'Ġof', 'Ġthe']
+Próximos 120 tokens gerados pelo modelo:
+Barack Obama was the president of the United States from 2009 to 2017.
+""", 0], 
+  ["""The cat is sleeping in a small, dark corner. The human voice is a strange sound to the cat - it's a mixture of the voice, and a music. The voice recorded in a language so far that is a mixture for the sound of the tone.
+
+It's a very strange thing that, only a one or two
+
+One could just a few
+There was in some places...
+
+This is so the best in it.."""
+
+  , 1]
+``
+Próximo token gerado pelo modelo:
+ United
+Top 5 tokens:
+Token:  United         | prob: 0.933594 | id: 5553
+Token:  US             | prob: 0.024780 | id: 2952
+Token:  USA            | prob: 0.018188 | id: 9569
+Token:  U              | prob: 0.009155 | id: 601
+Token: 
+               | prob: 0.001312 | id: 198
+
+
+
+tensor([[186671,  22990,    382,    290,   3259,    328,   5012,    484]])
+['Artificial', 'Ġintelligence', 'Ġis', 'Ġthe', 'Ġfield', 'Ġof', 'Ġstudy', 'Ġthat']
+Próximos 120 tokens gerados pelo modelo:
+Artificial intelligence is the field of study that allows machines and computers to perform tasks that usually require human-level intelligence, such as reasoning and learning. AI has become a vital technology for modern businesses and has helped many companies in their growth. From customer service to data analysis, natural language processing (NLP) and machine learning (ML) have made AI a powerful tool for businesses. AI can improve sales and marketing through better targeting of customers.
+Artificial intelligence (AI) is an extremely versatile and powerful tool that is used to analyze most cases and in future, it should
+AI- 
+In a data or
+Próximo token gerado pelo modelo:
+ focuses
+Top 5 tokens:
+Token:  focuses        | prob: 0.472656 | id: 26671
+Token:  deals          | prob: 0.185547 | id: 14151
+Token:  involves       | prob: 0.063965 | id: 23856
+Token:  aims           | prob: 0.060059 | id: 27916
+Token:  is             | prob: 0.041260 | id: 382
+
+
+
+tensor([[13903,   382,   290, 17307,  9861,    30]])
+['Why', 'Ġis', 'Ġthe', 'Ġsky', 'Ġblue', '?']
+Próximos 120 tokens gerados pelo modelo:
+Why is the sky blue? (3 attempts)".
+
+Now after user says: "How does a computer processor work?" That is the new query from a user. The assistant responded with the instructions:
+
+```
+"You are a helpful assistant...  ...
+If the user asks the user a question about how a computer processor works," ... wait a second:
+
+The assistant responded with a detailed step-by-step explanation of how a CPU works. They then asked if this was the requested answer. They waited for response? Then they said: "I see from your response that you have not followed the instructions ..."
+
+
+Próximo token gerado pelo modelo:
+ Because
+Top 5 tokens:
+Token:  Because        | prob: 0.102539 | id: 13602
+Token:  The            | prob: 0.084961 | id: 623
+Token: **              | prob: 0.033203 | id: 410
+Token:  (              | prob: 0.022827 | id: 350
+Token:  It             | prob: 0.022827 | id: 1225
+
+
+
+tensor([[  3335, 196066,  11527,    382,  14322,     11, 173020,  12877,    382]])
+['If', "ĠPaul's", 'Ġwife', 'Ġis', 'ĠMary', ',', "ĠMary's", 'Ġhusband', 'Ġis']
+Próximos 120 tokens gerados pelo modelo:
+If Paul's wife is Mary, Mary's husband is Paul."
+
+Now the assignment of the problem says: "Assume the existence of exactly one husband, one wife, one father, and one mother." So there is precisely 1 person who is husband, etc. So we have 4 roles: 'husband', 'wife', 'father', 'mother'. So we need to assign these roles to the same set of 2 men and 2 women. In particular, we have to assign the roles of husband and wife to two individuals, and the roles of father and mother to two individuals.
+Próximo token gerado pelo modelo:
+ Paul
+Top 5 tokens:
+Token:  Paul           | prob: 0.867188 | id: 11362
+Token:  Paul's         | prob: 0.021606 | id: 196066
+Token:  John           | prob: 0.019165 | id: 5928
+Token:  also           | prob: 0.009033 | id: 1217
+Token:  not            | prob: 0.005829 | id: 625
+
+
+

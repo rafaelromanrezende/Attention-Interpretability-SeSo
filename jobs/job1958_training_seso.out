@@ -1,0 +1,8 @@
+tensor([[ 2066, 25665,   316,  1335,  1078,  1232,  2392]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+Próximos 120 tokens gerados pelo modelo:
+He talked to her about his book, but she did not read it.
+
+Answer: “The thing she’d read in 2013 was not *your* book, but a new book by someone who had been in the same position* and so was a valuable insight for you as well.”
+
+We want the question: "Given a context of reading the books that might lead to: The thing you find yourself reading is that I am the best I had ever been. I would have tried to think better. After reading this, you think it was a book that would help you understand me and have
