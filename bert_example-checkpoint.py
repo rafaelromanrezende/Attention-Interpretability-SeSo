@@ -71,13 +71,13 @@ MODELS = [(BertModel,       BertTokenizer,       'bert-base-uncased'),
 BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNextSentencePrediction,
                       BertForSequenceClassification, BertForTokenClassification, BertForQuestionAnswering]
 
-IMAGES_DIR = Path("images/bert")
+IMAGES_DIR = Path("images/bert/base")
 IMAGES_DIR.mkdir(exist_ok=True)
 
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
 # and need to be trained on the down-stream task
-pretrained_weights = 'bert-large-uncased'
+pretrained_weights = 'bert-base-uncased'
 tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
 
 model = BertForMaskedLM.from_pretrained(pretrained_weights,
@@ -93,10 +93,10 @@ src[1] = 6
 targets[1] = (1,4) # she, doctor
 candidates[1] = ('her', 'his')
 
-sentences[0] = "He talked to her about his book"
+sentences[0] = "He talked to her about "+ tokenizer.mask_token +" book"
 src[0] = 6 # Aponta para 'his'
 targets[0] = (1,4) # he, her
-candidates[0] = ('his', 'her')
+candidates[0] = ('He', 'her')
 
 sentences[2] = "The author talked to Sara about "+tokenizer.mask_token+" book"
 src[2] = 7
@@ -134,7 +134,7 @@ src[8] = 14
 targets[8] = (2, 7) # Paul, Mary
 candidates[8] = ('paul', 'mary')
 
-for ex_id in range(1 , 9):
+for ex_id in range(0 , 9):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
     OUTPUT_DIR.mkdir(exist_ok=True)
     
@@ -187,7 +187,8 @@ for ex_id in range(1 , 9):
 
     fig = plt.figure(figsize=(2,6))
     ax = sns.barplot(
-        x=[f'{id_a}', '{id_b}'], 
+        x=[f'{word_a}', f'{word_b}'], 
+        # x=[f'{id_a}', f'{id_b}'], 
         y = [
         predicted_target[id_a].detach().item(),
         predicted_target[id_b].detach().item()
@@ -196,7 +197,7 @@ for ex_id in range(1 , 9):
         palette='Set1'
     )
     sns.despine(fig=fig, ax=None, top=True, right=True, left=True, bottom=False, offset=None, trim=False)
-    ax.set_yticks([])
+    ax.set_ylim(0,1)
     plt.savefig(OUTPUT_DIR /'rat_bert_bar_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     s_pos_corrigida = src[ex_id] - 1
@@ -226,7 +227,10 @@ for ex_id in range(1 , 9):
  
     res_adj_mat, res_labels_to_index = get_adjmat(mat=res_att_mat, input_tokens=tokens)
 
+    plt.figure()
     res_G = draw_attention_graph(res_adj_mat,res_labels_to_index, n_layers=res_att_mat.shape[0], length=res_att_mat.shape[-1])
+    plt.savefig(OUTPUT_DIR /'rat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
 
     last_layer_name = f'L{attentions_mat.shape[0]}' # Descobre automaticamente se é L6, L12 ou L24
     output_nodes = []
@@ -238,7 +242,11 @@ for ex_id in range(1 , 9):
             input_nodes.append(key)
 
     flow_values = compute_flows(res_G, res_labels_to_index, input_nodes, length=attentions_mat.shape[-1])
+    
+    plt.figure()
     flow_G = draw_attention_graph(flow_values,res_labels_to_index, n_layers=attentions_mat.shape[0], length=attentions_mat.shape[-1])
+    plt.savefig(OUTPUT_DIR /'res_fat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
 
     flow_att_mat = convert_adjmat_tomats(flow_values, n_layers=attentions_mat.shape[0], l=attentions_mat.shape[-1])
 
@@ -259,7 +267,10 @@ for ex_id in range(1 , 9):
     joint_attentions = compute_joint_attention(res_att_mat, add_residual=False)
     joint_att_adjmat, joint_labels_to_index = get_adjmat(mat=joint_attentions, input_tokens=tokens)
 
+    plt.figure()
     G = draw_attention_graph(joint_att_adjmat,joint_labels_to_index, n_layers=joint_attentions.shape[0], length=joint_attentions.shape[-1])
+    plt.savefig(OUTPUT_DIR /'res_jat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
 
     s_pos_corrigida = src[ex_id] - 1
     t_pos_corrigidas = (targets[ex_id][0] - 1, targets[ex_id][1] - 1)
