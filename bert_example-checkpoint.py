@@ -71,7 +71,7 @@ MODELS = [(BertModel,       BertTokenizer,       'bert-base-uncased'),
 BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNextSentencePrediction,
                       BertForSequenceClassification, BertForTokenClassification, BertForQuestionAnswering]
 
-IMAGES_DIR = Path("images/bert/base")
+IMAGES_DIR = Path("images/bert/large")
 IMAGES_DIR.mkdir(exist_ok=True)
 
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
@@ -216,7 +216,7 @@ for ex_id in range(0 , 9):
         raw_attention_avg, 
         s_pos_corrigida, 
         # t_positions=t_pos_corrigidas, 
-        t_positions=tuple([i for i in range(len(tokens))]), 
+        t_positions=tuple([i for i in range(len(tokens)) if i!= src[ex_id]-1]), 
         tokens_list=tokens 
     )
 
@@ -260,7 +260,7 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
         flow_att_mat, 
         s_pos_corrigida, 
-        t_positions=tuple([i for i in range(len(tokens))]), 
+        t_positions=tuple([i for i in range(len(tokens)) if i!= src[ex_id]-1]), 
         # t_positions=t_pos_corrigidas, 
         tokens_list=tokens 
     )
@@ -283,7 +283,7 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
     joint_attentions, 
     s_pos_corrigida, 
-    t_positions=tuple([i for i in range(len(tokens))]), 
+        t_positions=tuple([i for i in range(len(tokens)) if i!= src[ex_id]-1]), 
     # t_positions=t_pos_corrigidas, 
     tokens_list=tokens 
     )
