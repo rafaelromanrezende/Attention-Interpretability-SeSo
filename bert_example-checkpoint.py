@@ -77,7 +77,8 @@ IMAGES_DIR.mkdir(exist_ok=True)
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
 # and need to be trained on the down-stream task
-pretrained_weights = 'bert-base-uncased'
+pretrained_weights = 'bert-large-uncased'
+# pretrained_weights = 'bert-base-uncased'
 tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
 
 model = BertForMaskedLM.from_pretrained(pretrained_weights,
@@ -214,14 +215,15 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
         raw_attention_avg, 
         s_pos_corrigida, 
-        t_positions=t_pos_corrigidas, 
+        # t_positions=t_pos_corrigidas, 
+        t_positions=tuple([i for i in range(len(tokens))]), 
         tokens_list=tokens 
     )
 
     plt.savefig(OUTPUT_DIR /'rat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     #descomente isso se quiser usar a média das cabeças em cada camada
-    # res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
+    res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
     res_att_mat = res_att_mat + (0.3 * np.eye(res_att_mat.shape[1])[None,...])
     res_att_mat = res_att_mat / res_att_mat.sum(axis=-1)[...,None]
  
@@ -258,7 +260,8 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
         flow_att_mat, 
         s_pos_corrigida, 
-        t_positions=t_pos_corrigidas, 
+        t_positions=tuple([i for i in range(len(tokens))]), 
+        # t_positions=t_pos_corrigidas, 
         tokens_list=tokens 
     )
 
@@ -280,7 +283,8 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
     joint_attentions, 
     s_pos_corrigida, 
-    t_positions=t_pos_corrigidas, 
+    t_positions=tuple([i for i in range(len(tokens))]), 
+    # t_positions=t_pos_corrigidas, 
     tokens_list=tokens 
     )
 
