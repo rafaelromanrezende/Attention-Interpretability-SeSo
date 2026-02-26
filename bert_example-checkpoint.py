@@ -105,7 +105,7 @@ src[2] = 7
 targets[2] = (2,5) # author, sara
 candidates[2] = ('his', 'her')
 
-sentences[3] = "John tried to convince Mary of his love and brought flowers for "+tokenizer.mask_token
+sentences[3] = "John tried to convince Mary of his love and brought flowers for "+tokenizer.mask_token + "."
 src[3] = 13
 targets[3] = (1,5) # john, mary
 candidates[3] = ('her', 'him')
@@ -116,7 +116,7 @@ targets[4] = (1,3) # mary, john
 candidates[4] = ('her', 'his')
 
 
-sentences[5] = "Barack Obama was the president of the " + tokenizer.mask_token
+sentences[5] = "Barack Obama was the president of the " + tokenizer.mask_token + "."
 src[5] = 8
 targets[5] = (1, 2) # Barack, Obama
 candidates[5] = ('usa', 'us')
@@ -131,7 +131,7 @@ src[7] = 5
 targets[7] = (1, 4) # Why, sky
 candidates[7] = ('blue', 'dark')
 
-sentences[8] = "If Paul's wife is Mary, Mary's husband is " + tokenizer.mask_token
+sentences[8] = "If Paul's wife is Mary, Mary's husband is " + tokenizer.mask_token + "."
 src[8] = 14
 targets[8] = (2, 7) # Paul, Mary
 candidates[8] = ('paul', 'mary')
@@ -287,7 +287,7 @@ for ex_id in range(0 , 9):
     plot_attention_heatmap(
     joint_attentions, 
     s_pos_corrigida, 
-        t_positions=tuple([i for i in range(len(tokens)) if i!= src[ex_id]-1]), 
+    t_positions=tuple([i for i in range(len(tokens)) if i!= src[ex_id]-1]), 
     # t_positions=t_pos_corrigidas, 
     tokens_list=tokens 
     )
