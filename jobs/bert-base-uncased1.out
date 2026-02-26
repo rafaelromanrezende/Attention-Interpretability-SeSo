@@ -1,0 +1,172 @@
+model: bert-base-uncased, family: bert
+['he', 'talked', 'to', 'her', 'about', '[MASK]', 'book']
+Previsão bruta da frase: . he talked to her about the..
+Palavra na posição analisada (src): [MASK]
+Target 1 (he) prob no src: 0.000038
+Target 2 (her) prob no src: 0.114623
+Top 5 value
+Token: the             | prob: 0.598048 | id: 1996
+Token: his             | prob: 0.165277 | id: 2010
+Token: her             | prob: 0.114623 | id: 2014
+Token: a               | prob: 0.065921 | id: 1037
+Token: my              | prob: 0.015212 | id: 2026
+
+-- Decisão do MASK: 'He' vs 'her' --
+Probabilidade de 'He': 0.000001
+Probabilidade de 'her': 0.114623
+O modelo prefere 'He'?: False
+
+
+
+['she', 'asked', 'the', 'doctor', 'about', '[MASK]', 'back', '##ache']
+Previsão bruta da frase: . she asked the doctor about her back..
+Palavra na posição analisada (src): [MASK]
+Target 1 (she) prob no src: 0.000028
+Target 2 (doctor) prob no src: 0.000007
+Top 5 value
+Token: her             | prob: 0.435180 | id: 2014
+Token: the             | prob: 0.283266 | id: 1996
+Token: his             | prob: 0.233665 | id: 2010
+Token: my              | prob: 0.017159 | id: 2026
+Token: a               | prob: 0.008955 | id: 1037
+
+-- Decisão do MASK: 'her' vs 'his' --
+Probabilidade de 'her': 0.435180
+Probabilidade de 'his': 0.233665
+O modelo prefere 'her'?: True
+
+
+
+['the', 'author', 'talked', 'to', 'sara', 'about', '[MASK]', 'book']
+Previsão bruta da frase: . the author talked to sara about the..
+Palavra na posição analisada (src): [MASK]
+Target 1 (author) prob no src: 0.000006
+Target 2 (sara) prob no src: 0.000001
+Top 5 value
+Token: the             | prob: 0.750337 | id: 1996
+Token: her             | prob: 0.101862 | id: 2014
+Token: his             | prob: 0.069991 | id: 2010
+Token: this            | prob: 0.053065 | id: 2023
+Token: their           | prob: 0.007463 | id: 2037
+
+-- Decisão do MASK: 'his' vs 'her' --
+Probabilidade de 'his': 0.069991
+Probabilidade de 'her': 0.101862
+O modelo prefere 'his'?: False
+
+
+
+['john', 'tried', 'to', 'convince', 'mary', 'of', 'his', 'love', 'and', 'brought', 'flowers', 'for', '[MASK]', '.']
+Previsão bruta da frase: . john tried to convince mary of his love and brought flowers for her..
+Palavra na posição analisada (src): [MASK]
+Target 1 (john) prob no src: 0.000892
+Target 2 (mary) prob no src: 0.027547
+Top 5 value
+Token: her             | prob: 0.908901 | id: 2014
+Token: him             | prob: 0.032178 | id: 2032
+Token: mary            | prob: 0.027547 | id: 2984
+Token: them            | prob: 0.009655 | id: 2068
+Token: john            | prob: 0.000892 | id: 2198
+
+-- Decisão do MASK: 'her' vs 'him' --
+Probabilidade de 'her': 0.908901
+Probabilidade de 'him': 0.032178
+O modelo prefere 'her'?: True
+
+
+
+['mary', 'convinced', 'john', 'of', '[MASK]', 'love']
+Previsão bruta da frase: . mary convinced john of her..
+Palavra na posição analisada (src): [MASK]
+Target 1 (mary) prob no src: 0.000008
+Target 2 (john) prob no src: 0.000002
+Top 5 value
+Token: her             | prob: 0.600978 | id: 2014
+Token: their           | prob: 0.176938 | id: 2037
+Token: his             | prob: 0.145445 | id: 2010
+Token: this            | prob: 0.022314 | id: 2023
+Token: the             | prob: 0.018013 | id: 1996
+
+-- Decisão do MASK: 'her' vs 'his' --
+Probabilidade de 'her': 0.600978
+Probabilidade de 'his': 0.145445
+O modelo prefere 'her'?: True
+
+
+
+['barack', 'obama', 'was', 'the', 'president', 'of', 'the', '[MASK]', '.']
+Previsão bruta da frase: . barack obama was the president of the republic..
+Palavra na posição analisada (src): [MASK]
+Target 1 (barack) prob no src: 0.000043
+Target 2 (obama) prob no src: 0.000034
+Top 5 value
+Token: republic        | prob: 0.074957 | id: 3072
+Token: university      | prob: 0.070431 | id: 2118
+Token: state           | prob: 0.058301 | id: 2110
+Token: philippines     | prob: 0.042674 | id: 5137
+Token: union           | prob: 0.030286 | id: 2586
+
+-- Decisão do MASK: 'usa' vs 'us' --
+Probabilidade de 'usa': 0.022109
+Probabilidade de 'us': 0.010048
+O modelo prefere 'usa'?: True
+
+
+
+['artificial', 'intelligence', 'is', 'the', '[MASK]', 'of', 'study', 'that']
+Previsão bruta da frase: . artificial intelligence is the field of study..
+Palavra na posição analisada (src): [MASK]
+Target 1 (artificial) prob no src: 0.000000
+Target 2 (intelligence) prob no src: 0.000001
+Top 5 value
+Token: field           | prob: 0.855311 | id: 2492
+Token: area            | prob: 0.104262 | id: 2181
+Token: discipline      | prob: 0.008434 | id: 9009
+Token: subject         | prob: 0.007763 | id: 3395
+Token: branch          | prob: 0.007543 | id: 3589
+
+-- Decisão do MASK: 'field' vs 'area' --
+Probabilidade de 'field': 0.855311
+Probabilidade de 'area': 0.104262
+O modelo prefere 'field'?: True
+
+
+
+['why', 'is', 'the', 'sky', '[MASK]', '?']
+Previsão bruta da frase: . why is the sky blue?.
+Palavra na posição analisada (src): [MASK]
+Target 1 (why) prob no src: 0.000027
+Target 2 (sky) prob no src: 0.000191
+Top 5 value
+Token: blue            | prob: 0.268411 | id: 2630
+Token: black           | prob: 0.099049 | id: 2304
+Token: dark            | prob: 0.098500 | id: 2601
+Token: open            | prob: 0.030400 | id: 2330
+Token: empty           | prob: 0.022702 | id: 4064
+
+-- Decisão do MASK: 'blue' vs 'dark' --
+Probabilidade de 'blue': 0.268411
+Probabilidade de 'dark': 0.098500
+O modelo prefere 'blue'?: True
+
+
+
+['if', 'paul', "'", 's', 'wife', 'is', 'mary', ',', 'mary', "'", 's', 'husband', 'is', '[MASK]', '.']
+Previsão bruta da frase: . if paul's wife is mary, mary's husband is paul..
+Palavra na posição analisada (src): [MASK]
+Target 1 (paul) prob no src: 0.975578
+Target 2 (mary) prob no src: 0.001841
+Top 5 value
+Token: paul            | prob: 0.975578 | id: 2703
+Token: peter           | prob: 0.002305 | id: 2848
+Token: john            | prob: 0.001980 | id: 2198
+Token: mary            | prob: 0.001841 | id: 2984
+Token: joseph          | prob: 0.001261 | id: 3312
+
+-- Decisão do MASK: 'paul' vs 'mary' --
+Probabilidade de 'paul': 0.975578
+Probabilidade de 'mary': 0.001841
+O modelo prefere 'paul'?: True
+
+
+
