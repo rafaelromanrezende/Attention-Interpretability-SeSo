@@ -75,7 +75,7 @@ BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNex
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
 # and need to be trained on the down-stream task
-pretrained_weights = 'bert-large-uncased'
+pretrained_weights = 'bert-base-uncased'
 family = 'bert'
 print(f"model: {pretrained_weights}, family: {family}")
 tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
@@ -153,7 +153,7 @@ for ex_id in range(0 , 9):
     _attentions = [att.detach().numpy() for att in all_attentions]
     attentions_mat = np.asarray(_attentions)[:,0]
 
-    attentions_mat = attentions_mat[:, :, 1:-1, 1:-1]
+    attentions_mat = attentions_mat[:, :, 1:src[ex_id], 1:src[ex_id]]
 
     output = model(input_ids)[0]
     predicted_target = torch.nn.Softmax(dim=-1)(output[0,src[ex_id]])
