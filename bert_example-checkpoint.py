@@ -71,15 +71,16 @@ MODELS = [(BertModel,       BertTokenizer,       'bert-base-uncased'),
 BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNextSentencePrediction,
                       BertForSequenceClassification, BertForTokenClassification, BertForQuestionAnswering]
 
-IMAGES_DIR = Path("images/bert/large")
-IMAGES_DIR.mkdir(exist_ok=True)
 
 # All the classes for an architecture can be initiated from pretrained weights for this architecture
 # Note that additional weights added for fine-tuning are only initialized
 # and need to be trained on the down-stream task
 pretrained_weights = 'bert-large-uncased'
-# pretrained_weights = 'bert-base-uncased'
+family = 'bert'
+print(f"model: {pretrained_weights}, family: {family}")
 tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
+IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}")
+IMAGES_DIR.mkdir(exist_ok=True)
 
 model = BertForMaskedLM.from_pretrained(pretrained_weights,
                                   output_hidden_states=True,
@@ -184,7 +185,7 @@ for ex_id in range(0 , 9):
     print(f"\n-- Decisão do MASK: '{word_a}' vs '{word_b}' --")
     print(f"Probabilidade de '{word_a}': {prob_a:.6f}")
     print(f"Probabilidade de '{word_b}': {prob_b:.6f}")
-    print(f"O modelo prefere '{word_a}'?: {prob_a > prob_b}")
+    print(f"O modelo prefere '{word_a}'?: {prob_a > prob_b}\n\n\n")
 
     fig = plt.figure(figsize=(2,6))
     ax = sns.barplot(
@@ -199,7 +200,7 @@ for ex_id in range(0 , 9):
     )
     sns.despine(fig=fig, ax=None, top=True, right=True, left=True, bottom=False, offset=None, trim=False)
     ax.set_ylim(0,1)
-    plt.savefig(OUTPUT_DIR /'rat_bert_bar_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_bar_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     s_pos_corrigida = src[ex_id] - 1
     t_pos_corrigidas = (targets[ex_id][0] - 1, targets[ex_id][1] - 1)
@@ -220,7 +221,7 @@ for ex_id in range(0 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /'rat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     #descomente isso se quiser usar a média das cabeças em cada camada
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
@@ -230,8 +231,9 @@ for ex_id in range(0 , 9):
     res_adj_mat, res_labels_to_index = get_adjmat(mat=res_att_mat, input_tokens=tokens)
 
     plt.figure()
+    plt.title(sentence)
     res_G = draw_attention_graph(res_adj_mat,res_labels_to_index, n_layers=res_att_mat.shape[0], length=res_att_mat.shape[-1])
-    plt.savefig(OUTPUT_DIR /'rat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
     last_layer_name = f'L{attentions_mat.shape[0]}' # Descobre automaticamente se é L6, L12 ou L24
@@ -246,8 +248,9 @@ for ex_id in range(0 , 9):
     flow_values = compute_flows(res_G, res_labels_to_index, input_nodes, length=attentions_mat.shape[-1])
     
     plt.figure()
+    plt.title(sentence)
     flow_G = draw_attention_graph(flow_values,res_labels_to_index, n_layers=attentions_mat.shape[0], length=attentions_mat.shape[-1])
-    plt.savefig(OUTPUT_DIR /'res_fat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_fat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
     flow_att_mat = convert_adjmat_tomats(flow_values, n_layers=attentions_mat.shape[0], l=attentions_mat.shape[-1])
@@ -265,14 +268,15 @@ for ex_id in range(0 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /'res_fat_bert_att_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_fat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
     joint_attentions = compute_joint_attention(res_att_mat, add_residual=False)
     joint_att_adjmat, joint_labels_to_index = get_adjmat(mat=joint_attentions, input_tokens=tokens)
 
     plt.figure()
+    plt.title(sentence)
     G = draw_attention_graph(joint_att_adjmat,joint_labels_to_index, n_layers=joint_attentions.shape[0], length=joint_attentions.shape[-1])
-    plt.savefig(OUTPUT_DIR /'res_jat_bert_graph_{}.png'.format(ex_id), format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_jat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
     s_pos_corrigida = src[ex_id] - 1
@@ -288,7 +292,7 @@ for ex_id in range(0 , 9):
     tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /'res_jat_bert_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_jat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
     

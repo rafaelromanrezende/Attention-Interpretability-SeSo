@@ -10,4 +10,3 @@
 # train.sh
 
 srun -N1 singularity exec --nv container.sif python3 bert_example-checkpoint.py
-
