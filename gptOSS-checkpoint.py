@@ -40,7 +40,7 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-pretrained_weights = 'gpt2'
+pretrained_weights = 'openai/gpt-oss-20b'
 model_id = pretrained_weights.split("/")[-1]
 family = 'gpt'
 print(f"model: {model_id}, family: {family}")
