@@ -26,7 +26,7 @@ def get_adjmat(mat, input_tokens):
 
 def draw_attention_graph(adjmat, labels_to_index, n_layers, length, 
                          top_k=3, min_threshold=1e-4, figsize=(16,10),
-                         focus_target_idx=None): 
+                         focus_target_idx=None, ignore_token_idx=None): # <-- NOVO PARÂMETRO
 
     A = adjmat.copy()
     num_nodes = A.shape[0]
@@ -42,6 +42,7 @@ def draw_attention_graph(adjmat, labels_to_index, n_layers, length,
             A[i] = row * mask
 
     G = nx.DiGraph()
+    G.add_nodes_from(range(num_nodes))
     for i in range(num_nodes):
         for j in range(num_nodes):
             if A[i, j] > 0:
@@ -49,11 +50,16 @@ def draw_attention_graph(adjmat, labels_to_index, n_layers, length,
 
     if focus_target_idx is not None:
         top_node_id = n_layers * length + focus_target_idx
-        
         valid_nodes = nx.descendants(G, top_node_id)
         valid_nodes.add(top_node_id)
-        
         G = G.subgraph(valid_nodes).copy()
+
+    if ignore_token_idx is not None:
+        # Calcula o ID do nó desse token para todas as camadas
+        nodes_to_remove = [i * length + ignore_token_idx for i in range(n_layers + 1)]
+        # Remove apenas os nós que existem no grafo (para evitar erros)
+        nodes_to_remove = [n for n in nodes_to_remove if n in G.nodes()]
+        G.remove_nodes_from(nodes_to_remove)
 
     pos = {}
     label_pos = {}
@@ -71,6 +77,8 @@ def draw_attention_graph(adjmat, labels_to_index, n_layers, length,
         else:
             index_to_labels[idx] = ""
 
+    # ... [O resto da função continua exatamente igual] ...
+    
     plt.figure(figsize=figsize)
 
     nodes_to_draw = list(G.nodes())
@@ -79,7 +87,6 @@ def draw_attention_graph(adjmat, labels_to_index, n_layers, length,
 
     nx.draw_networkx_nodes(G, pos_filtered, node_color='black', node_size=40)
     
-    # Filtra os labels para não dar erro
     labels_filtered = {k: index_to_labels[k] for k in nodes_to_draw if k in index_to_labels}
     nx.draw_networkx_labels(G, pos=label_pos_filtered, labels=labels_filtered, font_size=14)
 

@@ -40,10 +40,12 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-IMAGES_DIR = Path("images/gptOSS")
-IMAGES_DIR.mkdir(exist_ok=True)
-
-pretrained_weights = 'openai/gpt-oss-20b'
+pretrained_weights = 'gpt2'
+model_id = pretrained_weights.split("/")[-1]
+family = 'gpt'
+print(f"model: {model_id}, family: {family}")
+IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}")
+IMAGES_DIR.mkdir(exist_ok=True, parents=True)
 model = AutoModelForCausalLM.from_pretrained(pretrained_weights,
                                              output_hidden_states=True,
                                              output_attentions=True)
@@ -71,9 +73,21 @@ sentences[7] = "Why is the sky blue?"
 
 sentences[8] = "If Paul's wife is Mary, Mary's husband is"
 
+sentences[9] = "The capital of France is"
+
+sentences[10] = "Tell the name of the capital of France"
+
+sentences[11] = "The biggest city of France is"
+
+sentences[12] = "The capital of Japan is"
+
+sentences[13] = "Best japaneses food is"
+
+sentences[14] = "Japanese best food"
+
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
     sentence = sentences[ex_id]
 
     tokens =  tokenizer.tokenize(sentence)
@@ -100,7 +114,7 @@ for ex_id in range(len(sentences)):
     print(input_ids)
     print(tokens)
 
-    max_l = 120
+    max_l =30
     output_ids = model.generate(input_ids, max_length=max_l)
 
     print(f"Próximos {max_l} tokens gerados pelo modelo:\n{tokenizer.decode(output_ids[0], skip_special_tokens=True)}")
@@ -109,8 +123,10 @@ for ex_id in range(len(sentences)):
 
     #softmask da útlima coluna
     predicted_target = torch.nn.Softmax(dim=0)(output[-1,:])
+
     # converte para array e pega o argmax(maior logit) para o último token
     previewd = np.argmax(predicted_target.float().cpu().detach().numpy(), axis=-1)
+
     print(f"Próximo token gerado pelo modelo:\n{tokenizer.decode(previewd)}")
 
     k=5
@@ -121,7 +137,7 @@ for ex_id in range(len(sentences)):
         print(f"Token: {tokenizer.decode([idx.item()]):15} | prob: {val.item():.6f} | id: {idx.item()}")
 
     print(f"\n\n")
-    # pega topk mais provaveis para plotar
+    # pega top5 mais provaveis para plotar
     yax = [float(predicted_target[id].detach()) for id in topk_idx]
     xax = [tokenizer.decode(id) for id in topk_idx] 
 
@@ -129,7 +145,7 @@ for ex_id in range(len(sentences)):
     ax = sns.barplot(x= xax, y=yax, linewidth=0)
     sns.despine(fig=fig, ax=None, top=True, right=True, left=True, bottom=False, offset=None, trim=False)
     ax.set_ylim(0,1)
-    plt.savefig(OUTPUT_DIR/ 'rat_gpt_bar_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{model_id}_bar_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
     plt.figure(figsize=(3,6))
@@ -147,15 +163,19 @@ for ex_id in range(len(sentences)):
     for i in range(len(tokens)):
         t_list.append(i)
     t_pos= tuple(t_list)
-    plot_attention_heatmap(attentions_mat.sum(axis=1)/attentions_mat.shape[1], s_position=len(tf_input_ids)-1, t_positions=t_pos, tokens_list=tokens)
+    plot_attention_heatmap(
+        attentions_mat.sum(axis=1)/attentions_mat.shape[1], 
+        s_position=len(tf_input_ids)-1, 
+        t_positions=t_pos, 
+        tokens_list=tokens)
 
     #raw attention
-    plt.savefig(OUTPUT_DIR/ 'rat_gpt_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{model_id}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
 
-    res_att_mat = res_att_mat + np.eye(res_att_mat.shape[1])[None,...]
+    res_att_mat = res_att_mat + 0.1*np.eye(res_att_mat.shape[1])[None,...]
 
     # renormaliza, mesma coisa de dividir por dois
     res_att_mat = res_att_mat / res_att_mat.sum(axis=-1)[...,None]
@@ -166,8 +186,11 @@ for ex_id in range(len(sentences)):
     # [[0, 0, 0, ..., Wn, 0]]
     res_adj_mat, res_labels_to_index = get_adjmat(mat=res_att_mat, input_tokens=tokens)
 
+    plt.figure()
+    plt.title(sentence)
     res_G = draw_attention_graph(res_adj_mat,res_labels_to_index, n_layers=res_att_mat.shape[0], length=res_att_mat.shape[-1])
-
+    plt.savefig(OUTPUT_DIR /f'rat_{model_id}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
     last_layer_name = f'L{attentions_mat.shape[0]}' # Descobre automaticamente se é L6, L12 ou L24
     output_nodes = []
     input_nodes = []
@@ -179,7 +202,12 @@ for ex_id in range(len(sentences)):
 
     # attention flow
     flow_values = compute_flows(res_G, res_labels_to_index, input_nodes, length=attentions_mat.shape[-1])
+
+    plt.figure()
+    plt.title(sentence)
     flow_G = draw_attention_graph(flow_values,res_labels_to_index, n_layers=attentions_mat.shape[0], length=attentions_mat.shape[-1])
+    plt.savefig(OUTPUT_DIR /f'res_fat_{model_id}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
 
     flow_att_mat = convert_adjmat_tomats(flow_values, n_layers=attentions_mat.shape[0], l=attentions_mat.shape[-1])
 
@@ -187,7 +215,7 @@ for ex_id in range(len(sentences)):
 
     plot_attention_heatmap(flow_att_mat, s_position=len(tf_input_ids)-1, t_positions=t_pos, tokens_list=tokens)
 
-    plt.savefig(OUTPUT_DIR/ 'res_fat_gpt_att_{}.png'.format(ex_id), format='png', transparent=True,dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_fat_{model_id}_att_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
     #attention rollout
@@ -195,11 +223,15 @@ for ex_id in range(len(sentences)):
 
     joint_att_adjmat, joint_labels_to_index = get_adjmat(mat=joint_attentions, input_tokens=tokens)
 
+    plt.figure()
+    plt.title(sentence)
     G = draw_attention_graph(joint_att_adjmat,joint_labels_to_index, n_layers=joint_attentions.shape[0], length=joint_attentions.shape[-1])
+    plt.savefig(OUTPUT_DIR /f'res_jat_{model_id}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.close()
 
     plt.figure(figsize=(3,6))
     plot_attention_heatmap(joint_attentions, s_position=len(tf_input_ids)-1, t_positions=t_pos, tokens_list=tokens)
-    plt.savefig(OUTPUT_DIR/ 'res_jat_gpt_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_jat_{model_id}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
 
