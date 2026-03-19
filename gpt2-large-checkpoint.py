@@ -85,6 +85,10 @@ sentences[13] = "Best japaneses food is"
 
 sentences[14] = "Japanese best food"
 
+sentences[15] = "City of France is"
+
+sentences[16] = "France of city is"
+
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
     OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
@@ -162,8 +166,17 @@ for ex_id in range(len(sentences)):
     for i in range(len(tokens)):
         t_list.append(i)
     t_pos= tuple(t_list)
+    attentions_mat_normalized = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
+    print(f"type:\n{type(attentions_mat_normalized)}")
+    print(f"attentions_mat_normalized:\n{attentions_mat_normalized}\nshape:{attentions_mat_normalized.shape}")
+    # print(f"attentions_mat_normalized array:\n{np.array(attentions_mat_normalized)}")
+    for camada in range(attentions_mat_normalized.shape[0]):
+        for j in range(attentions_mat_normalized.shape[-1]):
+            attentions_mat_normalized[camada,:,j] = attentions_mat_normalized[camada,:,j] / (attentions_mat_normalized.shape[-1] - j)
+    print(f"attentions_mat_normalized:\n{attentions_mat_normalized}")
+    
     plot_attention_heatmap(
-        attentions_mat.sum(axis=1)/attentions_mat.shape[1], 
+        attentions_mat_normalized, 
         s_position=len(tf_input_ids)-1, 
         t_positions=t_pos, 
         tokens_list=tokens)

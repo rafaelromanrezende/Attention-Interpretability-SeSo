@@ -85,6 +85,10 @@ sentences[13] = "Best japaneses food is"
 
 sentences[14] = "Japanese best food"
 
+sentences[15] = "City of France is"
+
+sentences[16] = "France of city is"
+
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
     OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
