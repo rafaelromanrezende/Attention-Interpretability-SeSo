@@ -22,11 +22,15 @@ from pathlib import Path
 
 
 def plot_attention_heatmap(att, s_position, t_positions, tokens_list):
-    cls_att = np.flip(att[:, s_position, t_positions], axis=0)
+    # Pega o slice normalmente
+    cls_att = np.flip(att[:, s_position, t_positions], axis=0).copy()
+    
+    cls_att[:, s_position] = 0.0 
     
     xticklb = [tokens_list[i] for i in t_positions]
     yticklb = [str(i) if i%2 ==0 else '' for i in np.arange(att.shape[0],0, -1)]
     
+    # O cmap agora vai distribuir as cores desconsiderando o valor gigante da auto-atenção
     ax = sns.heatmap(cls_att, xticklabels=xticklb, yticklabels=yticklb, cmap="YlOrRd")
     return ax
 
@@ -61,7 +65,7 @@ sentences[2] = "The author talked to Sara about his"
 
 sentences[3] = "John tried to convince Mary of his love and brought flowers for "
 
-sentences[4] = "Mary convinced John of her love"
+sentences[4] = "Mary convinced John of her"
 
 sentences[5] = "Barack Obama was the president of the"
 
@@ -69,7 +73,7 @@ sentences[6] = "Artificial intelligence is the field of study that"
 
 sentences[7] = "Why is the sky blue?"
 
-sentences[8] = "If Paul's wife is Mary, Mary's husband is"
+sentences[8] = "the capital of France is"
 
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
@@ -79,7 +83,8 @@ for ex_id in range(len(sentences)):
     tokens =  tokenizer.tokenize(sentence)
 
     # tokeniza a sentença
-    tf_input_ids = tokenizer.encode(sentence)
+    tf_input_ids = [tokenizer.eos_token_id] + tokenizer.encode(sentence)
+    tokens = [tokenizer.eos_token] + tokenizer.tokenize(sentence)
 
     # transforma em um batch de sentença única
     input_ids = torch.tensor([tf_input_ids])
@@ -96,6 +101,11 @@ for ex_id in range(len(sentences)):
 
     # mata a camada de batch
     attentions_mat = np.asarray(_attentions)[:,0]
+    attentions_mat = attentions_mat[:, :, 1:, 1:]
+
+    #ajuste para tirar o token eos
+    tokens = tokens[1:] 
+    tf_input_ids = tf_input_ids[1:]
 
     print(input_ids)
     print(tokens)
@@ -154,6 +164,7 @@ for ex_id in range(len(sentences)):
     plt.savefig(OUTPUT_DIR/ 'rat_gpt_att_{}.png'.format(ex_id), format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
+    #res_att_mat -> é um np array com a média das cabeças de todas as camadas 
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
 
     res_att_mat = res_att_mat + np.eye(res_att_mat.shape[1])[None,...]

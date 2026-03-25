@@ -153,7 +153,7 @@ for ex_id in range(0 , 9):
     _attentions = [att.detach().numpy() for att in all_attentions]
     attentions_mat = np.asarray(_attentions)[:,0]
 
-    attentions_mat = attentions_mat[:, :, 1:src[ex_id], 1:src[ex_id]]
+    attentions_mat = attentions_mat[:, :, 1:-1, 1:-1]
 
     output = model(input_ids)[0]
     predicted_target = torch.nn.Softmax(dim=-1)(output[0,src[ex_id]])
@@ -209,9 +209,9 @@ for ex_id in range(0 , 9):
 
     raw_attention_avg = attentions_mat.sum(axis=1) / attentions_mat.shape[1]
 
-    numero_da_cabeca = 5 # Teste números de 0 a 11
+    # numero_da_cabeca = 5 # Teste números de 0 a 11
 
-    res_att_mat = attentions_mat[:, numero_da_cabeca, :, :]
+    # res_att_mat = attentions_mat[:, numero_da_cabeca, :, :]
 
     plot_attention_heatmap(
         raw_attention_avg, 
@@ -229,10 +229,16 @@ for ex_id in range(0 , 9):
     res_att_mat = res_att_mat / res_att_mat.sum(axis=-1)[...,None]
  
     res_adj_mat, res_labels_to_index = get_adjmat(mat=res_att_mat, input_tokens=tokens)
-
+    s_pos_corrigida = src[ex_id] - 1
     plt.figure()
     plt.title(sentence)
-    res_G = draw_attention_graph(res_adj_mat,res_labels_to_index, n_layers=res_att_mat.shape[0], length=res_att_mat.shape[-1])
+    res_G = draw_attention_graph(res_adj_mat,res_labels_to_index, n_layers=res_att_mat.shape[0], length=res_att_mat.shape[-1] , ignore_token_idx=s_pos_corrigida)
+
+    total_expected_nodes = res_adj_mat.shape[0]
+    for node_idx in range(total_expected_nodes):
+        if not res_G.has_node(node_idx):
+            res_G.add_node(node_idx)
+
     plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
@@ -249,7 +255,7 @@ for ex_id in range(0 , 9):
     
     plt.figure()
     plt.title(sentence)
-    flow_G = draw_attention_graph(flow_values,res_labels_to_index, n_layers=attentions_mat.shape[0], length=attentions_mat.shape[-1])
+    flow_G = draw_attention_graph(flow_values,res_labels_to_index, n_layers=attentions_mat.shape[0], length=attentions_mat.shape[-1] , ignore_token_idx=s_pos_corrigida)
     plt.savefig(OUTPUT_DIR /f'res_fat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
 
@@ -275,10 +281,9 @@ for ex_id in range(0 , 9):
 
     plt.figure()
     plt.title(sentence)
-    G = draw_attention_graph(joint_att_adjmat,joint_labels_to_index, n_layers=joint_attentions.shape[0], length=joint_attentions.shape[-1])
+    G = draw_attention_graph(joint_att_adjmat,joint_labels_to_index, n_layers=joint_attentions.shape[0], length=joint_attentions.shape[-1] , ignore_token_idx=s_pos_corrigida)
     plt.savefig(OUTPUT_DIR /f'res_jat_{pretrained_weights}_graph_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
-
     s_pos_corrigida = src[ex_id] - 1
     t_pos_corrigidas = (targets[ex_id][0] - 1, targets[ex_id][1] - 1)
 
