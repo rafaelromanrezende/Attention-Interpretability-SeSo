@@ -9,4 +9,4 @@
 #SBATCH --cpus-per-task=8
 # train.sh
 
-srun singularity exec --nv container.sif python3 gpt2-checkpoint.py
+srun -N1 singularity exec --nv container.sif python3 gpt2-checkpoint.py
