@@ -76,8 +76,9 @@ BERT_MODEL_CLASSES = [BertModel, BertForPreTraining, BertForMaskedLM, BertForNex
 # Note that additional weights added for fine-tuning are only initialized
 # and need to be trained on the down-stream task
 pretrained_weights = 'bert-base-uncased'
+model_id = pretrained_weights.split("/")[-1]
 family = 'bert'
-print(f"model: {pretrained_weights}, family: {family}")
+print(f"model: {model_id}, family: {family}")
 tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
 IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}")
 IMAGES_DIR.mkdir(exist_ok=True)
@@ -136,9 +137,9 @@ src[8] = 14
 targets[8] = (2, 7) # Paul, Mary
 candidates[8] = ('paul', 'mary')
 
-for ex_id in range(0 , 9):
+for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
     
     sentence = sentences[ex_id]
 
@@ -153,7 +154,7 @@ for ex_id in range(0 , 9):
     _attentions = [att.detach().numpy() for att in all_attentions]
     attentions_mat = np.asarray(_attentions)[:,0]
 
-    attentions_mat = attentions_mat[:, :, 1:-1, 1:-1]
+    attentions_mat = attentions_mat[:, :, 1:src[ex_id], 1:src[ex_id]]
 
     output = model(input_ids)[0]
     predicted_target = torch.nn.Softmax(dim=-1)(output[0,src[ex_id]])
@@ -200,7 +201,7 @@ for ex_id in range(0 , 9):
     )
     sns.despine(fig=fig, ax=None, top=True, right=True, left=True, bottom=False, offset=None, trim=False)
     ax.set_ylim(0,1)
-    plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_bar_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{model_id}_bar_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     s_pos_corrigida = src[ex_id] - 1
     t_pos_corrigidas = (targets[ex_id][0] - 1, targets[ex_id][1] - 1)
@@ -221,7 +222,7 @@ for ex_id in range(0 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /f'rat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'rat_{model_id}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
     #descomente isso se quiser usar a média das cabeças em cada camada
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
@@ -274,7 +275,7 @@ for ex_id in range(0 , 9):
         tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /f'res_fat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_fat_{model_id}_att_{ex_id}.png', format='png', transparent=True,dpi=300, bbox_inches='tight')
     plt.close()
     joint_attentions = compute_joint_attention(res_att_mat, add_residual=False)
     joint_att_adjmat, joint_labels_to_index = get_adjmat(mat=joint_attentions, input_tokens=tokens)
@@ -297,7 +298,9 @@ for ex_id in range(0 , 9):
     tokens_list=tokens 
     )
 
-    plt.savefig(OUTPUT_DIR /f'res_jat_{pretrained_weights}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR /f'res_jat_{model_id}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
+    _attentions = [att.float().cpu().detach().numpy() for att in all_attentions] # transforma em array
+    previewd = np.argmax(predicted_target.float().cpu().detach().numpy(), axis=-1)
     

@@ -1,3 +1,5 @@
+# source: https://github.com/samiraabnar/attention_flow
+
 import networkx as nx
 import numpy as np
 import tensorflow as tf
