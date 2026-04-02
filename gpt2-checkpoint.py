@@ -44,11 +44,11 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-pretrained_weights = 'Qwen/Qwen2.5-7B-Instruct'
+pretrained_weights = 'Qwen/Qwen2.5-32B-Instruct'
 model_id = pretrained_weights.split("/")[-1]
 family = 'qwen'
 print(f"model: {model_id}, family: {family}")
-IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}/capital")
+IMAGES_DIR = Path(f"images/{family}/{model_id}/planets")
 IMAGES_DIR.mkdir(exist_ok=True, parents=True)
 model = AutoModelForCausalLM.from_pretrained(pretrained_weights,
                                              output_hidden_states=True,
@@ -58,16 +58,25 @@ tokenizer = AutoTokenizer.from_pretrained(pretrained_weights, use_fast=True)
 
 
 sentences = {}
-sentences [0] = "the capital of France is"
-sentences [1] = "the capital of France is:"
-sentences [2] = "the capital of Argentina is"
-sentences [3] = "the capital of Argentina is:"
-sentences [4] = "the capital of Slovakia is"
-sentences [5] = "the capital of Slovakia is:"
-sentences [6] = "the capital of Iceland is"
-sentences [7] = "the capital of Iceland is:"
-sentences [8] = "the capital of South Africa is"
-sentences [9] = "the capital of South Africa is:"
+sentences[0] = "the chemical symbol for gold is"
+
+sentences[1] = "the chemical symbol for gold is:"
+
+sentences[2] = "the chemical symbol for silver is"
+
+sentences[3] = "the chemical symbol for silver is:"
+
+sentences[4] = "the chemical symbol for silver is"
+
+sentences[5] = "the chemical symbol for iron is:"
+
+sentences[6] = "the chemical symbol for water is"
+
+sentences[7] = "the chemical symbol for water is:"
+
+sentences[8] = "the chemical symbol for sodium is"
+
+sentences[9] = "the chemical symbol for sodium is:"
 
 
 

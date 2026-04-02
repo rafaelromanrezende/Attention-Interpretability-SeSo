@@ -1,0 +1,171 @@
+model: Qwen2.5-7B-Instruct, family: qwen
+tensor([[151645,   1782,   1042,   4337,   5004,   7946,   9482,    374]])
+['the', 'Ġyear', 'ĠWorld', 'ĠWar', 'ĠII', 'Ġended', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the year World War II ended is the same as the year World War I began, what is that year? To solve the problem, we need
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.432432 | id: 279
+Token:  a              | prob: 0.201612 | id: 264
+Token:  an             | prob: 0.037887 | id: 458
+Token:  what           | prob: 0.008455 | id: 1128
+Token:  not            | prob: 0.008210 | id: 537
+
+
+
+tensor([[151645,   1782,   1042,   4337,   5004,   7946,   9482,    374,     25]])
+['the', 'Ġyear', 'ĠWorld', 'ĠWar', 'ĠII', 'Ġended', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the year World War II ended is: 1945. During this time, many significant events took place, including the dropping of atomic
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.380648 | id: 220
+Token:  
+              | prob: 0.065509 | id: 715
+Token:  __             | prob: 0.062942 | id: 1304
+Token:  {              | prob: 0.035356 | id: 314
+Token:  
+
+             | prob: 0.033621 | id: 4710
+
+
+
+tensor([[151645,   1782,   1156,  24900,  11610,   1042,    374]])
+['the', 'Ġfirst', 'ĠOlympic', 'ĠGames', 'Ġyear', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the first Olympic Games year is the same as the first year of the Summer Olympics, which is 1896. In this year,
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.462471 | id: 279
+Token:  a              | prob: 0.135852 | id: 264
+Token:  an             | prob: 0.039598 | id: 458
+Token:  in             | prob: 0.011367 | id: 304
+Token:  one            | prob: 0.009387 | id: 825
+
+
+
+tensor([[151645,   1782,   1156,  24900,  11610,   1042,    374,     25]])
+['the', 'Ġfirst', 'ĠOlympic', 'ĠGames', 'Ġyear', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the first Olympic Games year is: 1896
+
+The first modern Olympic Games were held in Athens, Greece in 189
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.319246 | id: 220
+Token:  __             | prob: 0.238367 | id: 1304
+Token:  A              | prob: 0.150544 | id: 362
+Token:  (              | prob: 0.044422 | id: 320
+Token:  
+              | prob: 0.025356 | id: 715
+
+
+
+tensor([[151645,   1782,   1372,    315,  32875,    304,    279,  12941,   1849,
+            374]])
+['the', 'Ġnumber', 'Ġof', 'Ġplanets', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the number of planets in the solar system is a multiple of the number of days it takes for Earth to complete one orbit around the sun.1
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.070313 | id: 279
+Token:  The            | prob: 0.050314 | id: 576
+Token: 1               | prob: 0.033354 | id: 16
+Token: 0               | prob: 0.032540 | id: 15
+Token: 2               | prob: 0.027316 | id: 17
+
+
+
+tensor([[151645,   1782,   1372,    315,  32875,    304,    279,  12941,   1849,
+            374,     25]])
+['the', 'Ġnumber', 'Ġof', 'Ġplanets', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the number of planets in the solar system is: 8
+
+ The answer is: 8. 
+
+The Solar System consists of eight planets as
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.673891 | id: 220
+Token:  The            | prob: 0.030636 | id: 576
+Token:  
+              | prob: 0.028970 | id: 715
+Token:  "              | prob: 0.015345 | id: 330
+Token:  There          | prob: 0.013318 | id: 2619
+
+
+
+tensor([[151645,   1782,   4628,    315,   3100,    304,  28202,    320,    258,
+          13136,   2687,      8,    374]])
+['the', 'Ġspeed', 'Ġof', 'Ġlight', 'Ġin', 'Ġvacuum', 'Ġ(', 'in', 'Ġkm', '/s', ')', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the speed of light in vacuum (in km/s) is 300,000. The speed of light in a certain material
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.526296 | id: 220
+Token:  approximately  | prob: 0.066376 | id: 13187
+Token: 
+               | prob: 0.044130 | id: 198
+Token:  -              | prob: 0.028798 | id: 481
+Token: :
+              | prob: 0.025885 | id: 510
+
+
+
+tensor([[151645,   1782,   4628,    315,   3100,    304,  28202,    320,    258,
+          13136,   2687,      8,    374,     25]])
+['the', 'Ġspeed', 'Ġof', 'Ġlight', 'Ġin', 'Ġvacuum', 'Ġ(', 'in', 'Ġkm', '/s', ')', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the speed of light in vacuum (in km/s) is: - Brainly.in\n 13.09.2018
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.421832 | id: 220
+Token:  (              | prob: 0.101756 | id: 320
+Token:  -              | prob: 0.097927 | id: 481
+Token:  The            | prob: 0.031674 | id: 576
+Token:  A              | prob: 0.027586 | id: 362
+
+
+
+tensor([[151645,   1782,   1372,    315,   4217,    304,    264,  22174,   2083,
+            374]])
+['the', 'Ġnumber', 'Ġof', 'Ġplayers', 'Ġin', 'Ġa', 'Ġsoccer', 'Ġteam', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the number of players in a soccer team is a certain number.12 more players would make the team's number a multiple of 9,
+Próximo token gerado pelo modelo:
+1
+Top 5 tokens:
+Token: 1               | prob: 0.056703 | id: 16
+Token:  the            | prob: 0.054391 | id: 279
+Token:  The            | prob: 0.046962 | id: 576
+Token: 0               | prob: 0.038472 | id: 15
+Token:  a              | prob: 0.032977 | id: 264
+
+
+
+tensor([[151645,   1782,   1372,    315,   4217,    304,    264,  22174,   2083,
+            374,     25]])
+['the', 'Ġnumber', 'Ġof', 'Ġplayers', 'Ġin', 'Ġa', 'Ġsoccer', 'Ġteam', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the number of players in a soccer team is:11
+The total number of players on a soccer team is 11. This includes
+Próximo token gerado pelo modelo:
+1
+Top 5 tokens:
+Token: 1               | prob: 0.064540 | id: 16
+Token: \n              | prob: 0.029593 | id: 1699
+Token: \               | prob: 0.024548 | id: 59
+Token:                 | prob: 0.021859 | id: 220
+Token: 2               | prob: 0.021164 | id: 17
+
+
+

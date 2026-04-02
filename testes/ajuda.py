@@ -3,7 +3,7 @@ import pathlib
 
 for idx, i in enumerate(list(os.listdir("./testes"))):
     if(idx %4 ==0 ):
-        print(f"MODELO {i.split('.')}")
+        print(f"MODELO {i.split('.')[0]}")
 
     if((".out" in i)):
         with open("testes/"+i, 'r') as f:

@@ -1,0 +1,177 @@
+model: Qwen2.5-7B-Instruct, family: qwen
+tensor([[151645,   1782,   6722,    315,   9625,    374]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is a beautiful and historic city that has been the seat of power for centuries. It is known for its stunning architecture, rich
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.081421 | id: 279
+Token:  a              | prob: 0.066353 | id: 264
+Token:  an             | prob: 0.016667 | id: 458
+Token:                 | prob: 0.012408 | id: 220
+Token: 1               | prob: 0.011984 | id: 16
+
+
+
+tensor([[151645,   1782,   6722,    315,   9625,    374,     25]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is: Paris.
+
+The Eiffel Tower, one of the most iconic landmarks in the world, stands proudly in Paris.
+Próximo token gerado pelo modelo:
+ Paris
+Top 5 tokens:
+Token:  Paris          | prob: 0.528747 | id: 12095
+Token:  paris          | prob: 0.033596 | id: 40858
+Token:  {}             | prob: 0.031092 | id: 4687
+Token:  
+
+           | prob: 0.020460 | id: 23341
+Token:  __             | prob: 0.019590 | id: 1304
+
+
+
+tensor([[151645,   1782,   6722,    315,  31064,    374]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is the city of Buenos Aires, located in the country's northeast region on the western bank of the estuary of the R
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.146927 | id: 279
+Token:  a              | prob: 0.142569 | id: 264
+Token:  an             | prob: 0.016532 | id: 458
+Token: 1               | prob: 0.010829 | id: 16
+Token:                 | prob: 0.009699 | id: 220
+
+
+
+tensor([[151645,   1782,   6722,    315,  31064,    374,     25]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is: Buenos Aires
+You are correct. The capital of Argentina is Buenos Aires. 
+
+Some additional information:
+1. Buenos
+Próximo token gerado pelo modelo:
+ Buenos
+Top 5 tokens:
+Token:  Buenos         | prob: 0.920095 | id: 68073
+Token:  buen           | prob: 0.017147 | id: 53713
+Token:  arg            | prob: 0.016917 | id: 1392
+Token:  
+
+             | prob: 0.009609 | id: 4710
+Token:  b              | prob: 0.008948 | id: 293
+
+
+
+tensor([[151645,   1782,   6722,    315,  80685,    374]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is the city of Bratislava. It is the largest city in the country, located in the southwestern part of Slovakia
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.092288 | id: 279
+Token:  a              | prob: 0.090749 | id: 264
+Token: 1               | prob: 0.018274 | id: 16
+Token:  an             | prob: 0.015567 | id: 458
+Token:                 | prob: 0.013584 | id: 220
+
+
+
+tensor([[151645,   1782,   6722,    315,  80685,    374,     25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is: Bratislava. It's a beautiful city located in the southwestern part of the country, on the banks of
+Próximo token gerado pelo modelo:
+ Br
+Top 5 tokens:
+Token:  Br             | prob: 0.972690 | id: 3240
+Token: Br              | prob: 0.022563 | id: 6828
+Token:  br             | prob: 0.001013 | id: 1411
+Token: 布拉              | prob: 0.001003 | id: 111359
+Token: br              | prob: 0.000234 | id: 1323
+
+
+
+tensor([[151645,   1782,   6722,    315,  38396,    374]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is  Reykjavík. Given the context, what is Reykjavík known for?
+Reykjav
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.082304 | id: 220
+Token:  a              | prob: 0.063051 | id: 264
+Token:  the            | prob: 0.060149 | id: 279
+Token:  and            | prob: 0.050445 | id: 323
+Token:  -              | prob: 0.032629 | id: 481
+
+
+
+tensor([[151645,   1782,   6722,    315,  38396,    374,     25]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is: Reykjavik. 
+
+Reykjavik is the largest city in Iceland and serves as the country's capital
+Próximo token gerado pelo modelo:
+ Rey
+Top 5 tokens:
+Token:  Rey            | prob: 0.845506 | id: 48212
+Token:  
+
+             | prob: 0.033368 | id: 4710
+Token:  
+              | prob: 0.017246 | id: 715
+Token:  __             | prob: 0.016451 | id: 1304
+Token:  Re             | prob: 0.007397 | id: 1032
+
+
+
+tensor([[151645,   1782,   6722,    315,   4882,  10174,    374]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is a city with a population of 4.5 million, located in the Western Cape province. The city has a
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.083930 | id: 264
+Token:  the            | prob: 0.078449 | id: 279
+Token: 1               | prob: 0.019291 | id: 16
+Token:  an             | prob: 0.013475 | id: 458
+Token:                 | prob: 0.013134 | id: 220
+
+
+
+tensor([[151645,   1782,   6722,    315,   4882,  10174,    374,     25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is: 
+
+A. Cape Town
+B. Johannesburg
+C. Durban
+D. Pretoria
+
+The correct
+Próximo token gerado pelo modelo:
+ Pret
+Top 5 tokens:
+Token:  Pret           | prob: 0.221614 | id: 61939
+Token:  
+
+             | prob: 0.114368 | id: 4710
+Token:                 | prob: 0.096695 | id: 220
+Token:  
+              | prob: 0.066865 | id: 715
+Token:  Cape           | prob: 0.058031 | id: 28615
+
+
+

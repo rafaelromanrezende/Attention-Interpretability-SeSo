@@ -1,0 +1,184 @@
+model: Qwen2.5-7B-Instruct, family: qwen
+tensor([[151645,   1782,   3150,    315,    576,  33079,    730,    637,   1370,
+            859,    374]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠK', 'aram', 'az', 'ov', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is a famous Russian writer. Can you name him?
+A. Leo Tolstoy
+B.
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.073205 | id: 576
+Token:  the            | prob: 0.046117 | id: 279
+Token:  a              | prob: 0.032386 | id: 264
+Token: 1               | prob: 0.031201 | id: 16
+Token: 0               | prob: 0.029906 | id: 15
+
+
+
+tensor([[151645,   1782,   3150,    315,    576,  33079,    730,    637,   1370,
+            859,    374,     25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠK', 'aram', 'az', 'ov', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is: 
+A. Pushkin
+B. Tolstoy
+C. Gorky
+
+Próximo token gerado pelo modelo:
+ F
+Top 5 tokens:
+Token:  F              | prob: 0.380515 | id: 434
+Token:  
+
+             | prob: 0.212242 | id: 4710
+Token:  
+              | prob: 0.196919 | id: 715
+Token:  A              | prob: 0.071860 | id: 362
+Token:  The            | prob: 0.054509 | id: 576
+
+
+
+tensor([[151645,   1782,   3150,    315,    576,  14671,  19351,    374]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is1.The author of "The Little Prince" is Antoine de Saint-Exupéry, a French
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.107944 | id: 576
+Token:  the            | prob: 0.062040 | id: 279
+Token:  a              | prob: 0.031988 | id: 264
+Token: 1               | prob: 0.025604 | id: 16
+Token: The             | prob: 0.020924 | id: 785
+
+
+
+tensor([[151645,   1782,   3150,    315,    576,  14671,  19351,    374,     25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is: Antoine de Saint-Exupéry. He was a French writer, pilot, and aviation pioneer.
+Próximo token gerado pelo modelo:
+ Antoine
+Top 5 tokens:
+Token:  Antoine        | prob: 0.691495 | id: 90154
+Token:  A              | prob: 0.122930 | id: 362
+Token:  
+              | prob: 0.071392 | id: 715
+Token:  __             | prob: 0.051686 | id: 1304
+Token:  
+
+             | prob: 0.036429 | id: 4710
+
+
+
+tensor([[151645,   1782,   3150,    315,   9582,   1149,    374]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is ____
+A. Shakespeare
+B. Hugo
+C. Goethe
+D. Balzac
+Answer: A
+Próximo token gerado pelo modelo:
+ __
+Top 5 tokens:
+Token:  __             | prob: 0.127298 | id: 1304
+Token:  a              | prob: 0.080770 | id: 264
+Token: :
+              | prob: 0.076667 | id: 510
+Token: 
+               | prob: 0.066635 | id: 198
+Token:  believed       | prob: 0.051458 | id: 11585
+
+
+
+tensor([[151645,   1782,   3150,    315,   9582,   1149,    374,     25]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is: William Shakespeare. William Shakespeare was an English playwright, poet, and actor who lived from 1564
+Próximo token gerado pelo modelo:
+ William
+Top 5 tokens:
+Token:  William        | prob: 0.935997 | id: 12375
+Token:  
+
+             | prob: 0.020172 | id: 4710
+Token:  __             | prob: 0.009495 | id: 1304
+Token:  **             | prob: 0.007073 | id: 3070
+Token:  
+              | prob: 0.005057 | id: 715
+
+
+
+tensor([[151645,   1782,   1156,   5220,    304,   3550,    374]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is0.3
+The first woman in space was Valentina Tereshkova, a Soviet cosmonaut who
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.070923 | id: 264
+Token:  the            | prob: 0.047092 | id: 279
+Token: :               | prob: 0.044939 | id: 25
+Token: ,               | prob: 0.041020 | id: 11
+Token: 1               | prob: 0.027652 | id: 16
+
+
+
+tensor([[151645,   1782,   1156,   5220,    304,   3550,    374,     25]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is: Valentina Tereshkova, a Soviet cosmonaut who became the first woman to travel to space on
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.464426 | id: 576
+Token:  Val            | prob: 0.342969 | id: 4104
+Token:  To             | prob: 0.039656 | id: 2014
+Token:  the            | prob: 0.022776 | id: 279
+Token:  
+              | prob: 0.014246 | id: 715
+
+
+
+tensor([[151645,   1782,   3150,    315,   5004,    323,  25803,    374,     25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is:____
+A. Leo Tolstoy
+B. Fyodor Dostoevsky
+C
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.049119 | id: 220
+Token: 1               | prob: 0.037885 | id: 16
+Token:  The            | prob: 0.036489 | id: 576
+Token: 
+               | prob: 0.029490 | id: 198
+Token: ____            | prob: 0.023317 | id: 2130
+
+
+
+tensor([[151645,   1782,   3150,    315,   5004,    323,  25803,    374,     25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is:1. Leo Tolstoy
+2. Vladimir Nabokov
+3. Fyodor Dost
+Próximo token gerado pelo modelo:
+ 
+Top 5 tokens:
+Token:                 | prob: 0.049119 | id: 220
+Token: 1               | prob: 0.037885 | id: 16
+Token:  The            | prob: 0.036489 | id: 576
+Token: 
+               | prob: 0.029490 | id: 198
+Token: ____            | prob: 0.023317 | id: 2130
+
+
+

@@ -1,0 +1,172 @@
+model: Qwen2.5-7B-Instruct, family: qwen
+tensor([[151645,   1782,  11580,    448,    279,   1429,  24544,    374]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is jupiter, which has 79 confirmed moons and 81 known ring systems.
+
+Write the above sentence
+Próximo token gerado pelo modelo:
+ j
+Top 5 tokens:
+Token:  j              | prob: 0.215136 | id: 502
+Token:  saturn         | prob: 0.079280 | id: 84689
+Token: 
+               | prob: 0.055099 | id: 198
+Token:  uranus         | prob: 0.045371 | id: 95228
+Token:  ne             | prob: 0.039935 | id: 834
+
+
+
+tensor([[151645,   1782,  11580,    448,    279,   1429,  24544,    374,     25]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is: jupiter. it has at least 79 known moons, and many of them have their own rings
+Próximo token gerado pelo modelo:
+ Jupiter
+Top 5 tokens:
+Token:  Jupiter        | prob: 0.216748 | id: 49689
+Token:  Saturn         | prob: 0.173622 | id: 49153
+Token:  j              | prob: 0.114068 | id: 502
+Token:  J              | prob: 0.068318 | id: 619
+Token:  Neptune        | prob: 0.044557 | id: 79624
+
+
+
+tensor([[151645,   1782,  11580,   3881,    438,    279,   3731,  28835,    374]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet isThe planet known as the Red Planet is Mars.The Red Planet is called this because its reddish appearance
+Próximo token gerado pelo modelo:
+The
+Top 5 tokens:
+Token: The             | prob: 0.041382 | id: 785
+Token:  The            | prob: 0.022093 | id: 576
+Token: 2               | prob: 0.015717 | id: 17
+Token:  a              | prob: 0.013263 | id: 264
+Token:  the            | prob: 0.011591 | id: 279
+
+
+
+tensor([[151645,   1782,  11580,   3881,    438,    279,   3731,  28835,    374,
+             25]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet is: The solar system body known as the Red Planet is Mars. The reddish appearance of Mars is due
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.180239 | id: 576
+Token:  However        | prob: 0.049826 | id: 4354
+Token:  I              | prob: 0.048286 | id: 358
+Token:  Mars           | prob: 0.045797 | id: 21048
+Token:  According      | prob: 0.044642 | id: 10548
+
+
+
+tensor([[151645,   1782,  24632,  11580,    304,    279,  12941,   1849,    374]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is the Mercury, and the largest is the Jupiter. The diameter of the Mercury is 4879
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.148493 | id: 198
+Token:  the            | prob: 0.116497 | id: 279
+Token:  Mercury        | prob: 0.080707 | id: 43562
+Token: :
+              | prob: 0.076730 | id: 510
+Token:  __             | prob: 0.060885 | id: 1304
+
+
+
+tensor([[151645,   1782,  24632,  11580,    304,    279,  12941,   1849,    374,
+             25]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is: Mercury.
+You are correct! Mercury is indeed the smallest planet in our solar system. Here are some
+Próximo token gerado pelo modelo:
+ Mercury
+Top 5 tokens:
+Token:  Mercury        | prob: 0.311150 | id: 43562
+Token:  ven            | prob: 0.212430 | id: 11208
+Token:  the            | prob: 0.102013 | id: 279
+Token:  mercury        | prob: 0.082965 | id: 50752
+Token:  The            | prob: 0.068383 | id: 576
+
+
+
+tensor([[151645,   1782,  11580,   3041,  60843,    504,    279,   8059,    374]])
+['the', 'Ġplanet', 'Ġfar', 'thest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is The planet farthest from the Sun in our solar system is The current farthest planet from the Sun in
+Próximo token gerado pelo modelo:
+The
+Top 5 tokens:
+Token: The             | prob: 0.047069 | id: 785
+Token: 2               | prob: 0.025659 | id: 17
+Token:  The            | prob: 0.021304 | id: 576
+Token:  a              | prob: 0.016077 | id: 264
+Token: 3               | prob: 0.015154 | id: 18
+
+
+
+tensor([[151645,   1782,  11580,   3041,  60843,    504,    279,   8059,    374,
+             25]])
+['the', 'Ġplanet', 'Ġfar', 'thest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is:A) JupiterB) UranusC) NeptuneD) Pluto
+A:
+To determine which of
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.046472 | id: 576
+Token: 0               | prob: 0.032781 | id: 15
+Token: 1               | prob: 0.031644 | id: 16
+Token: 2               | prob: 0.026633 | id: 17
+Token: The             | prob: 0.026263 | id: 785
+
+
+
+tensor([[151645,   1782,   7772,  11580,    304,    279,  12941,   1849,    374]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is
+The largest planet in the solar system is Jupiter. It has a diameter of about 86,
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.140899 | id: 198
+Token:  the            | prob: 0.072032 | id: 279
+Token:  j              | prob: 0.067217 | id: 502
+Token:  __             | prob: 0.063094 | id: 1304
+Token: 
+
+              | prob: 0.040653 | id: 271
+
+
+
+tensor([[151645,   1782,   7772,  11580,    304,    279,  12941,   1849,    374,
+             25]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is: Jupiter. (A) True (B) False
+The correct answer is (A) True.
+
+
+Próximo token gerado pelo modelo:
+ Jupiter
+Top 5 tokens:
+Token:  Jupiter        | prob: 0.307962 | id: 49689
+Token:  The            | prob: 0.201362 | id: 576
+Token:  j              | prob: 0.090121 | id: 502
+Token:  (              | prob: 0.062738 | id: 320
+Token:  the            | prob: 0.049838 | id: 279
+
+
+

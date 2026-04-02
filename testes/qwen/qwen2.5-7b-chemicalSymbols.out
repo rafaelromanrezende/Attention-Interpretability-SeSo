@@ -1,0 +1,162 @@
+model: Qwen2.5-7B-Instruct, family: qwen
+tensor([[151645,   1782,  11483,   7735,    369,   6623,    374]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is Au. Gold is a precious metal that has been used for thousands of years in jewelry, coins, and other applications
+Próximo token gerado pelo modelo:
+ Au
+Top 5 tokens:
+Token:  Au             | prob: 0.601043 | id: 32050
+Token: 
+               | prob: 0.071811 | id: 198
+Token:  A              | prob: 0.033372 | id: 362
+Token:  a              | prob: 0.031661 | id: 264
+Token:  __             | prob: 0.021893 | id: 1304
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,   6623,    374,     25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is: Au. Gold is a chemical element with the atomic number 79 and the symbol Au, which comes from
+Próximo token gerado pelo modelo:
+ Au
+Top 5 tokens:
+Token:  Au             | prob: 0.646745 | id: 32050
+Token:  a              | prob: 0.049382 | id: 264
+Token:  A              | prob: 0.038090 | id: 362
+Token:  au             | prob: 0.029033 | id: 7906
+Token:  $\             | prob: 0.026349 | id: 57960
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  14961,    374]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is Ag. The symbol "Ag" comes from the Latin word "argentum," which means "silver." Silver is
+Próximo token gerado pelo modelo:
+ Ag
+Top 5 tokens:
+Token:  Ag             | prob: 0.562986 | id: 4598
+Token: 
+               | prob: 0.078053 | id: 198
+Token:  ag             | prob: 0.068849 | id: 933
+Token:  __             | prob: 0.036473 | id: 1304
+Token:  ____           | prob: 0.017778 | id: 30743
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  14961,    374,     25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is: Ag
+You are correct. The chemical symbol for silver is Ag. This comes from the Latin word "argent
+Próximo token gerado pelo modelo:
+ Ag
+Top 5 tokens:
+Token:  Ag             | prob: 0.487851 | id: 4598
+Token:  ag             | prob: 0.086273 | id: 933
+Token:  $\             | prob: 0.079527 | id: 57960
+Token:  
+              | prob: 0.035273 | id: 715
+Token:  __             | prob: 0.031463 | id: 1304
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  14961,    374]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is Ag, and the atomic number of silver is 47. What is the number of protons in a neutral
+Próximo token gerado pelo modelo:
+ Ag
+Top 5 tokens:
+Token:  Ag             | prob: 0.562986 | id: 4598
+Token: 
+               | prob: 0.078053 | id: 198
+Token:  ag             | prob: 0.068849 | id: 933
+Token:  __             | prob: 0.036473 | id: 1304
+Token:  ____           | prob: 0.017778 | id: 30743
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  11001,    374,     25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġiron', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for iron is: Fe. The atomic number of iron is 26, which means that a neutral iron atom has 2
+Próximo token gerado pelo modelo:
+ Fe
+Top 5 tokens:
+Token:  Fe             | prob: 0.680274 | id: 3841
+Token:  fe             | prob: 0.169651 | id: 1152
+Token:  $\             | prob: 0.023260 | id: 57960
+Token:  __             | prob: 0.014811 | id: 1304
+Token:  \              | prob: 0.011243 | id: 1124
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,   3015,    374]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is H2O. it consists of 2 hydrogen atoms and one oxygen atom.
+This is correct! The chemical formula
+Próximo token gerado pelo modelo:
+ H
+Top 5 tokens:
+Token:  H              | prob: 0.423189 | id: 472
+Token:  h              | prob: 0.352335 | id: 305
+Token: 
+               | prob: 0.024679 | id: 198
+Token:  __             | prob: 0.015848 | id: 1304
+Token:  written        | prob: 0.011918 | id: 5326
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,   3015,    374,     25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is: h2o
+What element is missing from h2o? The element missing from H2O to complete
+Próximo token gerado pelo modelo:
+ h
+Top 5 tokens:
+Token:  h              | prob: 0.322709 | id: 305
+Token:  H              | prob: 0.155311 | id: 472
+Token:  (              | prob: 0.064205 | id: 320
+Token:  __             | prob: 0.052695 | id: 1304
+Token:  
+              | prob: 0.045321 | id: 715
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  38595,    374]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is Na. Sodium is a chemical element with the atomic number 11 and is a soft, silvery-white,
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.561120 | id: 12812
+Token:  na             | prob: 0.107917 | id: 4317
+Token: 
+               | prob: 0.076052 | id: 198
+Token:  __             | prob: 0.050878 | id: 1304
+Token:  $\             | prob: 0.015335 | id: 57960
+
+
+
+tensor([[151645,   1782,  11483,   7735,    369,  38595,    374,     25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is: Na
+You are an AI assistant. Provide information and help as much as you can.
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.436896 | id: 12812
+Token:  na             | prob: 0.198353 | id: 4317
+Token:  $\             | prob: 0.052946 | id: 57960
+Token:  __             | prob: 0.036052 | id: 1304
+Token:                 | prob: 0.030836 | id: 220
+
+
+
