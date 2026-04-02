@@ -1,0 +1,96 @@
+sentences = {}
+sentences [0] = "the capital of France is"
+sentences [1] = "the capital of France is:"
+sentences [2] = "the capital of Argentina is"
+sentences [3] = "the capital of Argentina is:"
+sentences [4] = "the capital of Slovakia is"
+sentences [5] = "the capital of Slovakia is:"
+sentences [6] = "the capital of Iceland is"
+sentences [7] = "the capital of Iceland is:"
+sentences [8] = "the capital of South Africa is"
+sentences [9] = "the capital of South Africa is:"
+
+
+sentences = {}
+sentences [0] = "the planet with the most rings is"
+sentences [1] = "the planet with the most rings is:"
+sentences [2] = "the planet known as the Red Planet is"
+sentences [3] = "the planet known as the Red Planet is:"
+sentences [4] = "the smallest planet in the solar system is"
+sentences [5] = "the smallest planet in the solar system is:"
+sentences [6] = "the planet farthest from the Sun is"
+sentences [7] = "the planet farthest from the Sun is:"
+sentences [8] = "the largest planet in the solar system is"
+sentences [9] = "the largest planet in the solar system is:"
+
+
+
+Chemical symbol	
+
+sentences[0] = "the chemical symbol for gold is"
+
+sentences[1] = "the chemical symbol for gold is:"
+
+sentences[2] = "the chemical symbol for silver is"
+
+sentences[3] = "the chemical symbol for silver is:"
+
+sentences[4] = "the chemical symbol for silver is"
+
+sentences[5] = "the chemical symbol for iron is:"
+
+sentences[6] = "the chemical symbol for water is"
+
+sentences[7] = "the chemical symbol for water is:"
+
+sentences[8] = "the chemical symbol for sodium is"
+
+sentences[9] = "the chemical symbol for sodium is:"
+
+
+
+People	
+
+sentences[0] = "the author of The Brothers Karamazov is"
+
+sentences[1] = "the author of The Brothers Karamazov is:"
+
+sentences[2] = "the author of The Little Prince is"
+
+sentences[3] = "the author of The Little Prince is:"
+
+sentences[4] = "the author of Hamlet is"
+
+sentences[5] = "the author of Hamlet is:"
+
+sentences[6] = "the first woman in space is"
+
+sentences[7] = "the first woman in space is:"
+
+sentences[8] = "the author of War and Peace is:"
+
+sentences[9] = "the author of War and Peace is:"
+
+
+
+Number	
+
+sentences[0] = "the year World War II ended is"
+
+sentences[1] = "the year World War II ended is:"
+
+sentences[2] = "the first Olympic Games year is"
+
+sentences[3] = "the first Olympic Games year is:"
+
+sentences[4] = "the number of planets in the solar system is"
+
+sentences[5] = "the number of planets in the solar system is:"
+
+sentences[6] = "the speed of light in vacuum (in km/s) is"
+
+sentences[7] = "the speed of light in vacuum (in km/s) is:"
+
+sentences[8] = "the number of players in a soccer team is"
+
+sentences[9] = "the number of players in a soccer team is:"

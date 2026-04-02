@@ -1,0 +1,226 @@
+model: gpt2, family: gpt
+tensor([[50256,  1169,  3139,   286,  4881,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is the capital of France, and the capital of France is the capital of France.
+
+The capital of France is the
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.066471 | id: 262
+Token:  now            | prob: 0.050941 | id: 783
+Token:  a              | prob: 0.050261 | id: 257
+Token:  in             | prob: 0.030524 | id: 287
+Token:  not            | prob: 0.022618 | id: 407
+
+
+
+tensor([[50256,  1169,  3139,   286,  4881,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is:
+
+the capital of France is:
+
+the capital of France is:
+
+the capital of France is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.214538 | id: 198
+Token:  the            | prob: 0.042594 | id: 262
+Token:  "              | prob: 0.022157 | id: 366
+Token:  France         | prob: 0.018908 | id: 4881
+Token:  The            | prob: 0.018629 | id: 383
+
+
+
+tensor([[50256,  1169,  3139,   286, 16519,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is the capital of Argentina.
+
+The capital of Argentina is the capital of Argentina.
+
+The capital of Argentina is
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.074397 | id: 262
+Token:  a              | prob: 0.058647 | id: 257
+Token:  now            | prob: 0.052602 | id: 783
+Token:  located        | prob: 0.043240 | id: 5140
+Token:  in             | prob: 0.036893 | id: 287
+
+
+
+tensor([[50256,  1169,  3139,   286, 16519,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is:
+
+the capital of Argentina is:
+
+the capital of Argentina is:
+
+the capital of Argentina is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.203782 | id: 198
+Token:  Argentina      | prob: 0.061589 | id: 16519
+Token:  Buenos         | prob: 0.056830 | id: 46210
+Token:  the            | prob: 0.040447 | id: 262
+Token:  The            | prob: 0.014123 | id: 383
+
+
+
+tensor([[50256,  1169,  3139,   286, 36839,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is the capital of Slovakia.
+
+The capital of Slovakia is the capital of Slovakia.
+
+The capital of Slovakia is
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.065806 | id: 262
+Token:  now            | prob: 0.061825 | id: 783
+Token:  a              | prob: 0.059853 | id: 257
+Token:  located        | prob: 0.041998 | id: 5140
+Token:  in             | prob: 0.026863 | id: 287
+
+
+
+tensor([[50256,  1169,  3139,   286, 36839,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is:
+
+the capital of Slovakia is:
+
+the capital of Slovakia is:
+
+the capital of Slovakia is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.255342 | id: 198
+Token:  the            | prob: 0.029928 | id: 262
+Token:  Slovakia       | prob: 0.023370 | id: 36839
+Token:  "              | prob: 0.015304 | id: 366
+Token:  The            | prob: 0.014667 | id: 383
+
+
+
+tensor([[50256,  1169,  3139,   286, 17333,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is the capital of the world.
+
+The capital of Iceland is the capital of the world.
+
+The capital of
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.085913 | id: 262
+Token:  a              | prob: 0.071690 | id: 257
+Token:  now            | prob: 0.044663 | id: 783
+Token:  located        | prob: 0.037964 | id: 5140
+Token:  in             | prob: 0.023146 | id: 287
+
+
+
+tensor([[50256,  1169,  3139,   286, 17333,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is:
+
+the capital of Iceland is:
+
+the capital of Iceland is:
+
+the capital of Iceland is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.277851 | id: 198
+Token:  the            | prob: 0.039192 | id: 262
+Token:  Iceland        | prob: 0.034329 | id: 17333
+Token:  The            | prob: 0.017818 | id: 383
+Token: 
+
+              | prob: 0.016454 | id: 628
+
+
+
+tensor([[50256,  1169,  3139,   286,  2520,  5478,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is the capital of South Africa.
+
+The capital of South Africa is the capital of South Africa.
+
+The
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.071664 | id: 262
+Token:  a              | prob: 0.060721 | id: 257
+Token:  now            | prob: 0.052025 | id: 783
+Token:  in             | prob: 0.026089 | id: 287
+Token:  home           | prob: 0.019695 | id: 1363
+
+
+
+tensor([[50256,  1169,  3139,   286,  2520,  5478,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is:
+
+the capital of South Africa is:
+
+the capital of South Africa is:
+
+the capital
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.254154 | id: 198
+Token:  the            | prob: 0.038340 | id: 262
+Token:  South          | prob: 0.024797 | id: 2520
+Token:  The            | prob: 0.018316 | id: 383
+Token:  a              | prob: 0.013081 | id: 257
+
+
+
+tensor([[50256,  1544,  6619,   284,   607,   546,   465,  1492]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+Próximos 30 tokens gerados pelo modelo:
+He talked to her about his book, "The Art of the Deal," and she said, "I'm not sure what to make of it
+Próximo token gerado pelo modelo:
+,
+Top 5 tokens:
+Token: ,               | prob: 0.305783 | id: 11
+Token:  and            | prob: 0.132432 | id: 290
+Token:  "              | prob: 0.056518 | id: 366
+Token:  about          | prob: 0.053474 | id: 546
+Token: .               | prob: 0.051806 | id: 13
+
+
+

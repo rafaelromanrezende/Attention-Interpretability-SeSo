@@ -1,0 +1,211 @@
+model: gpt2-xl, family: gpt
+tensor([[50256,  1169,   614,  2159,  1810,  2873,  4444,   318]])
+['the', 'Ġyear', 'ĠWorld', 'ĠWar', 'ĠII', 'Ġended', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the year World War II ended is a bit of a mystery. The official story is that the war ended in 1945, but the truth is that
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.096887 | id: 257
+Token:  not            | prob: 0.081617 | id: 407
+Token:  the            | prob: 0.051096 | id: 262
+Token:  often          | prob: 0.048567 | id: 1690
+Token:  known          | prob: 0.027241 | id: 1900
+
+
+
+tensor([[50256,  1169,   614,  2159,  1810,  2873,  4444,   318,    25]])
+['the', 'Ġyear', 'ĠWorld', 'ĠWar', 'ĠII', 'Ġended', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the year World War II ended is:
+
+1939
+
+1940
+
+1941
+
+1942
+
+1943
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.172185 | id: 198
+Token:  1939           | prob: 0.120934 | id: 24414
+Token:  1941           | prob: 0.102144 | id: 23234
+Token:  1945           | prob: 0.085972 | id: 15761
+Token:  1940           | prob: 0.054146 | id: 16236
+
+
+
+tensor([[50256,  1169,   717, 11514,  5776,   614,   318]])
+['the', 'Ġfirst', 'ĠOlympic', 'ĠGames', 'Ġyear', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the first Olympic Games year is a time of great change for the sport of rowing. The sport has undergone a massive transformation in the last decade
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.090546 | id: 257
+Token:  the            | prob: 0.060376 | id: 262
+Token:  over           | prob: 0.056712 | id: 625
+Token:  always         | prob: 0.028091 | id: 1464
+Token:  in             | prob: 0.027441 | id: 287
+
+
+
+tensor([[50256,  1169,   717, 11514,  5776,   614,   318,    25]])
+['the', 'Ġfirst', 'ĠOlympic', 'ĠGames', 'Ġyear', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the first Olympic Games year is:
+
+The first Olympic Games year is:
+
+The first Olympic Games year is:
+
+The first
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.349610 | id: 198
+Token:  2012           | prob: 0.031282 | id: 2321
+Token: 
+
+              | prob: 0.031272 | id: 628
+Token:  2016           | prob: 0.020226 | id: 1584
+Token:  2018           | prob: 0.016749 | id: 2864
+
+
+
+tensor([[50256,  1169,  1271,   286, 14705,   287,   262,  6591,  1080,   318]])
+['the', 'Ġnumber', 'Ġof', 'Ġplanets', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the number of planets in the solar system is about 4.5 billion, and the number of stars in the galaxy is about 100 billion.
+
+Próximo token gerado pelo modelo:
+ about
+Top 5 tokens:
+Token:  about          | prob: 0.053371 | id: 546
+Token:  estimated      | prob: 0.046184 | id: 6108
+Token:  a              | prob: 0.029970 | id: 257
+Token:  approximately  | prob: 0.027472 | id: 6702
+Token:  not            | prob: 0.024737 | id: 407
+
+
+
+tensor([[50256,  1169,  1271,   286, 14705,   287,   262,  6591,  1080,   318,
+            25]])
+['the', 'Ġnumber', 'Ġof', 'Ġplanets', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the number of planets in the solar system is:
+
+(1)
+
+(2)
+
+(3)
+
+(4
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.408020 | id: 198
+Token: 
+
+              | prob: 0.051831 | id: 628
+Token:  1              | prob: 0.046139 | id: 352
+Token:  4              | prob: 0.019869 | id: 604
+Token:  7              | prob: 0.019357 | id: 767
+
+
+
+tensor([[50256,  1169,  2866,   286,  1657,   287, 17076,   357,   259, 10571,
+            14,    82,     8,   318]])
+['the', 'Ġspeed', 'Ġof', 'Ġlight', 'Ġin', 'Ġvacuum', 'Ġ(', 'in', 'Ġkm', '/', 's', ')', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the speed of light in vacuum (in km/s) is the speed of light in vacuum (in km/s) is the speed of
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.086751 | id: 262
+Token:  about          | prob: 0.068183 | id: 546
+Token:  299            | prob: 0.065975 | id: 31011
+Token:  a              | prob: 0.054623 | id: 257
+Token:  equal          | prob: 0.035892 | id: 4961
+
+
+
+tensor([[50256,  1169,  2866,   286,  1657,   287, 17076,   357,   259, 10571,
+            14,    82,     8,   318,    25]])
+['the', 'Ġspeed', 'Ġof', 'Ġlight', 'Ġin', 'Ġvacuum', 'Ġ(', 'in', 'Ġkm', '/', 's', ')', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the speed of light in vacuum (in km/s) is:
+
+(1)
+
+where:
+
+v is the speed
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.657084 | id: 198
+Token: 
+
+              | prob: 0.095579 | id: 628
+Token:  c              | prob: 0.011100 | id: 269
+Token:  1              | prob: 0.010001 | id: 352
+Token: <|endoftext|>   | prob: 0.007302 | id: 50256
+
+
+
+tensor([[50256,  1169,  1271,   286,  1938,   287,   257, 11783,  1074,   318]])
+['the', 'Ġnumber', 'Ġof', 'Ġplayers', 'Ġin', 'Ġa', 'Ġsoccer', 'Ġteam', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the number of players in a soccer team is the number of players in the team divided by the number of players in the team.
+
+the
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.109568 | id: 262
+Token:  called         | prob: 0.071344 | id: 1444
+Token:  usually        | prob: 0.069307 | id: 3221
+Token:  not            | prob: 0.050460 | id: 407
+Token:  a              | prob: 0.040158 | id: 257
+
+
+
+tensor([[50256,  1169,  1271,   286,  1938,   287,   257, 11783,  1074,   318,
+            25]])
+['the', 'Ġnumber', 'Ġof', 'Ġplayers', 'Ġin', 'Ġa', 'Ġsoccer', 'Ġteam', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the number of players in a soccer team is:
+
+the number of players in a soccer team is:
+
+the number of players in
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.432375 | id: 198
+Token:  the            | prob: 0.069541 | id: 262
+Token: 
+
+              | prob: 0.050912 | id: 628
+Token:  The            | prob: 0.025661 | id: 383
+Token:  (              | prob: 0.022180 | id: 357
+
+
+

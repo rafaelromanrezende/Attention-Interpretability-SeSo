@@ -1,0 +1,177 @@
+model: gpt2, family: gpt
+tensor([[50256,  1169,  1772,   286,   383, 16055,  9375, 45983,   709,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠKar', 'amaz', 'ov', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is a former Soviet military officer and a member of the Russian Academy of Sciences. He is the author of
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.204446 | id: 257
+Token:  an             | prob: 0.065837 | id: 281
+Token:  the            | prob: 0.064826 | id: 262
+Token:  currently      | prob: 0.033209 | id: 3058
+Token:  now            | prob: 0.030966 | id: 783
+
+
+
+tensor([[50256,  1169,  1772,   286,   383, 16055,  9375, 45983,   709,   318,
+            25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠKar', 'amaz', 'ov', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is:
+
+"The most important thing to remember about the Russian Revolution is that it was a revolution
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.294952 | id: 198
+Token:  a              | prob: 0.050471 | id: 257
+Token:  "              | prob: 0.039631 | id: 366
+Token:  The            | prob: 0.032701 | id: 383
+Token: 
+
+              | prob: 0.026851 | id: 628
+
+
+
+tensor([[50256,  1169,  1772,   286,   383,  7703,  9005,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is a writer, musician, and filmmaker. He has been a member of the New York Times Bestsellers List
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.221290 | id: 257
+Token:  an             | prob: 0.053451 | id: 281
+Token:  the            | prob: 0.040362 | id: 262
+Token:  not            | prob: 0.021457 | id: 407
+Token:  Dead           | prob: 0.019839 | id: 5542
+
+
+
+tensor([[50256,  1169,  1772,   286,   383,  7703,  9005,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is: The Story of a Prince, a book that has been translated into over 100 languages.
+
+The Little
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.193725 | id: 383
+Token:  A              | prob: 0.181895 | id: 317
+Token:  An             | prob: 0.048499 | id: 1052
+Token: 
+               | prob: 0.043782 | id: 198
+Token:  How            | prob: 0.035117 | id: 1374
+
+
+
+tensor([[50256,  1169,  1772,   286,  4345,  1616,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is a writer, novelist, and critic. He is the author of Hamlet: The Story of Hamlet, and
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.167057 | id: 257
+Token:  an             | prob: 0.040175 | id: 281
+Token:  not            | prob: 0.036395 | id: 407
+Token:  the            | prob: 0.035008 | id: 262
+Token:  dead           | prob: 0.019255 | id: 2636
+
+
+
+tensor([[50256,  1169,  1772,   286,  4345,  1616,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is:
+
+"The most important thing to remember about Hamlet is that it is a story about a man who
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.237171 | id: 198
+Token:  a              | prob: 0.068117 | id: 257
+Token:  The            | prob: 0.054817 | id: 383
+Token:  A              | prob: 0.039113 | id: 317
+Token:  the            | prob: 0.030526 | id: 262
+
+
+
+tensor([[50256,  1169,   717,  2415,   287,  2272,   318]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is a woman who has been in space for over a decade.
+
+The first woman in space is a woman who
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.100691 | id: 257
+Token:  the            | prob: 0.042996 | id: 262
+Token:  now            | prob: 0.030272 | id: 783
+Token:  an             | prob: 0.024232 | id: 281
+Token:  going          | prob: 0.022250 | id: 1016
+
+
+
+tensor([[50256,  1169,   717,  2415,   287,  2272,   318,    25]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is:
+
+a woman who has been in space for over a decade.
+
+a woman who has been in
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.210773 | id: 198
+Token:  a              | prob: 0.027303 | id: 257
+Token:  the            | prob: 0.020395 | id: 262
+Token: 
+
+              | prob: 0.017822 | id: 628
+Token:  The            | prob: 0.011946 | id: 383
+
+
+
+tensor([[50256,  1169,  1772,   286,  1810,   290, 12689,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is: The Story of the War of the Worlds, a book that explores the history of the conflict between the United
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.175875 | id: 383
+Token:  A              | prob: 0.125558 | id: 317
+Token: 
+               | prob: 0.057493 | id: 198
+Token:  How            | prob: 0.050046 | id: 1374
+Token:  a              | prob: 0.040744 | id: 257
+
+
+
+tensor([[50256,  1169,  1772,   286,  1810,   290, 12689,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is: The Story of the War of the Worlds, a book that explores the history of the conflict between the United
+Próximo token gerado pelo modelo:
+ The
+Top 5 tokens:
+Token:  The            | prob: 0.175875 | id: 383
+Token:  A              | prob: 0.125558 | id: 317
+Token: 
+               | prob: 0.057493 | id: 198
+Token:  How            | prob: 0.050046 | id: 1374
+Token:  a              | prob: 0.040744 | id: 257
+
+
+

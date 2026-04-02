@@ -1,0 +1,218 @@
+model: gpt2, family: gpt
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is the "golden" or "golden" gold.
+
+The "golden" gold is the "
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.144477 | id: 262
+Token:  a              | prob: 0.079781 | id: 257
+Token:  "              | prob: 0.045761 | id: 366
+Token:  called         | prob: 0.019823 | id: 1444
+Token:  gold           | prob: 0.018557 | id: 3869
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is:
+
+The chemical symbol for gold is:
+
+The chemical symbol for gold is:
+
+The chemical
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.164693 | id: 198
+Token:  "              | prob: 0.068133 | id: 366
+Token:  gold           | prob: 0.034805 | id: 3869
+Token:  the            | prob: 0.032744 | id: 262
+Token:  a              | prob: 0.023423 | id: 257
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is the "silver" in the Greek word for silver.
+
+The silver in the Greek word for silver is the
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.121877 | id: 262
+Token:  a              | prob: 0.070144 | id: 257
+Token:  silver         | prob: 0.039219 | id: 8465
+Token:  "              | prob: 0.032938 | id: 366
+Token:  called         | prob: 0.021294 | id: 1444
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is:
+
+silver
+
+silver
+
+silver
+
+silver
+
+silver
+
+silver
+
+silver
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.155715 | id: 198
+Token:  "              | prob: 0.057025 | id: 366
+Token:  silver         | prob: 0.040218 | id: 8465
+Token:  the            | prob: 0.024815 | id: 262
+Token:  a              | prob: 0.017609 | id: 257
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is the "silver" in the Greek word for silver.
+
+The silver in the Greek word for silver is the
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.121877 | id: 262
+Token:  a              | prob: 0.070144 | id: 257
+Token:  silver         | prob: 0.039219 | id: 8465
+Token:  "              | prob: 0.032938 | id: 366
+Token:  called         | prob: 0.021294 | id: 1444
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  6953,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġiron', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for iron is:
+
+iron
+
+iron oxide
+
+iron oxide
+
+iron oxide
+
+iron oxide
+
+iron
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.150108 | id: 198
+Token:  "              | prob: 0.051208 | id: 366
+Token:  iron           | prob: 0.050733 | id: 6953
+Token:  the            | prob: 0.022888 | id: 262
+Token:  a              | prob: 0.014253 | id: 257
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is the "water" in the Greek word for water.
+
+The Greek word for water is the "water"
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.116237 | id: 262
+Token:  a              | prob: 0.070434 | id: 257
+Token:  "              | prob: 0.040636 | id: 366
+Token:  water          | prob: 0.030970 | id: 1660
+Token:  called         | prob: 0.023978 | id: 1444
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is:
+
+The chemical symbol for water is:
+
+The chemical symbol for water is:
+
+The chemical
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.128149 | id: 198
+Token:  water          | prob: 0.061423 | id: 1660
+Token:  "              | prob: 0.057540 | id: 366
+Token:  the            | prob: 0.025280 | id: 262
+Token:  a              | prob: 0.016590 | id: 257
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is sodium chloride.
+
+The chemical symbol for sodium is sodium chloride.
+
+The chemical symbol for sodium is sodium
+Próximo token gerado pelo modelo:
+ sodium
+Top 5 tokens:
+Token:  sodium         | prob: 0.137621 | id: 21072
+Token:  the            | prob: 0.075819 | id: 262
+Token:  a              | prob: 0.064190 | id: 257
+Token:  "              | prob: 0.027284 | id: 366
+Token:  potassium      | prob: 0.018143 | id: 33156
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is:
+
+The chemical symbol for sodium is:
+
+The chemical symbol for sodium is:
+
+The chemical
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.150569 | id: 198
+Token:  sodium         | prob: 0.137057 | id: 21072
+Token:  "              | prob: 0.038965 | id: 366
+Token:  the            | prob: 0.015148 | id: 262
+Token:  S              | prob: 0.012868 | id: 311
+
+
+

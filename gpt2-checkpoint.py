@@ -44,11 +44,11 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-pretrained_weights = 'gpt2'
+pretrained_weights = 'Qwen/Qwen2.5-7B-Instruct'
 model_id = pretrained_weights.split("/")[-1]
-family = 'gpt'
+family = 'qwen'
 print(f"model: {model_id}, family: {family}")
-IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}")
+IMAGES_DIR = Path(f"images/{family}/{pretrained_weights}/capital")
 IMAGES_DIR.mkdir(exist_ok=True, parents=True)
 model = AutoModelForCausalLM.from_pretrained(pretrained_weights,
                                              output_hidden_states=True,
@@ -58,40 +58,18 @@ tokenizer = AutoTokenizer.from_pretrained(pretrained_weights, use_fast=True)
 
 
 sentences = {}
+sentences [0] = "the capital of France is"
+sentences [1] = "the capital of France is:"
+sentences [2] = "the capital of Argentina is"
+sentences [3] = "the capital of Argentina is:"
+sentences [4] = "the capital of Slovakia is"
+sentences [5] = "the capital of Slovakia is:"
+sentences [6] = "the capital of Iceland is"
+sentences [7] = "the capital of Iceland is:"
+sentences [8] = "the capital of South Africa is"
+sentences [9] = "the capital of South Africa is:"
 
-sentences[0] = "He talked to her about his book"
 
-sentences[1] = "She asked the doctor about her"
-
-sentences[2] = "The author talked to Sara about his"
-
-sentences[3] = "John tried to convince Mary of his love and brought flowers for "
-
-sentences[4] = "Mary convinced John of her"
-
-sentences[5] = "Barack Obama was the president of the"
-
-sentences[6] = "Artificial intelligence is the field of study that"
-
-sentences[7] = "Why is the sky blue?"
-
-sentences[8] = "the capital of France is"
-
-sentences[9] = "The capital of France is"
-
-sentences[10] = "Tell the name of the capital of France"
-
-sentences[11] = "The biggest city of France is"
-
-sentences[12] = "The capital of Japan is"
-
-sentences[13] = "Best japaneses food is"
-
-sentences[14] = "Japanese best food"
-
-sentences[15] = "City of France is"
-
-sentences[16] = "France of city is"
 
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)

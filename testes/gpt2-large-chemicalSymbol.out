@@ -1,0 +1,230 @@
+model: gpt2-large, family: gpt
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is Au
+
+the chemical symbol for silver is Ag
+
+the chemical symbol for copper is Cu
+
+the chemical
+Próximo token gerado pelo modelo:
+ Au
+Top 5 tokens:
+Token:  Au             | prob: 0.096785 | id: 40666
+Token:  gu             | prob: 0.055891 | id: 915
+Token:  G              | prob: 0.039408 | id: 402
+Token:  H              | prob: 0.036284 | id: 367
+Token:  (              | prob: 0.023166 | id: 357
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is:
+
+G
+
+The chemical symbol for gold is:
+
+G
+
+The chemical symbol for gold
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.328788 | id: 198
+Token:  Au             | prob: 0.079531 | id: 40666
+Token: 
+
+              | prob: 0.045057 | id: 628
+Token:  G              | prob: 0.040214 | id: 402
+Token: G               | prob: 0.033648 | id: 38
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is Si
+
+the chemical symbol for silver is Si
+
+the chemical symbol for silver is Si
+
+the chemical
+Próximo token gerado pelo modelo:
+ Si
+Top 5 tokens:
+Token:  Si             | prob: 0.073721 | id: 15638
+Token:  S              | prob: 0.056794 | id: 311
+Token:  silver         | prob: 0.045544 | id: 8465
+Token:  (              | prob: 0.039854 | id: 357
+Token: 
+               | prob: 0.028376 | id: 198
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is:
+
+SIL
+
+The silver content of a product is the amount of silver in the product.
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.264908 | id: 198
+Token:  S              | prob: 0.093661 | id: 311
+Token: 
+
+              | prob: 0.066010 | id: 628
+Token: S               | prob: 0.050141 | id: 50
+Token:  Si             | prob: 0.043229 | id: 15638
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is Si
+
+the chemical symbol for silver is Si
+
+the chemical symbol for silver is Si
+
+the chemical
+Próximo token gerado pelo modelo:
+ Si
+Top 5 tokens:
+Token:  Si             | prob: 0.073721 | id: 15638
+Token:  S              | prob: 0.056794 | id: 311
+Token:  silver         | prob: 0.045544 | id: 8465
+Token:  (              | prob: 0.039854 | id: 357
+Token: 
+               | prob: 0.028376 | id: 198
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  6953,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġiron', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for iron is:
+
+Fe
+
+the chemical symbol for manganese is:
+
+Mn
+
+the chemical
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.315218 | id: 198
+Token:  Fe             | prob: 0.238901 | id: 5452
+Token:  I              | prob: 0.090886 | id: 314
+Token: Fe              | prob: 0.038790 | id: 14304
+Token: 
+
+              | prob: 0.031444 | id: 628
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is H 2 O
+
+the chemical symbol for hydrogen is H
+
+the chemical symbol for oxygen is O
+
+
+Próximo token gerado pelo modelo:
+ H
+Top 5 tokens:
+Token:  H              | prob: 0.711995 | id: 367
+Token:  CH             | prob: 0.052143 | id: 5870
+Token:  C              | prob: 0.028612 | id: 327
+Token:  OH             | prob: 0.021921 | id: 18723
+Token:  HO             | prob: 0.014997 | id: 40115
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is: H 2 O
+
+the chemical symbol for hydrogen is: H 2
+
+the chemical symbol for oxygen is
+Próximo token gerado pelo modelo:
+ H
+Top 5 tokens:
+Token:  H              | prob: 0.398518 | id: 367
+Token: 
+               | prob: 0.150424 | id: 198
+Token:  CH             | prob: 0.048719 | id: 5870
+Token: H               | prob: 0.037385 | id: 39
+Token: 
+
+              | prob: 0.025332 | id: 628
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is Na
+
+the chemical symbol for potassium is K
+
+the chemical symbol for calcium is Ca
+
+the chemical
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.577045 | id: 11013
+Token: Na              | prob: 0.072484 | id: 26705
+Token:  sodium         | prob: 0.038393 | id: 21072
+Token: 
+               | prob: 0.020947 | id: 198
+Token:  C              | prob: 0.012247 | id: 327
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is: Na
+
+the chemical symbol for potassium is: K
+
+the chemical symbol for calcium is: Ca
+
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.630050 | id: 11013
+Token: Na              | prob: 0.144656 | id: 26705
+Token: 
+               | prob: 0.075576 | id: 198
+Token:  sodium         | prob: 0.026768 | id: 21072
+Token:  S              | prob: 0.022276 | id: 311
+
+
+

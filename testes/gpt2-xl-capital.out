@@ -1,0 +1,210 @@
+model: gpt2-xl, family: gpt
+tensor([[50256,  1169,  3139,   286,  4881,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is a city of over 6 million people, and the largest city in the French-speaking part of the country. It is
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.135289 | id: 257
+Token:  the            | prob: 0.117286 | id: 262
+Token:  located        | prob: 0.069049 | id: 5140
+Token:  Paris          | prob: 0.054613 | id: 6342
+Token:  one            | prob: 0.020971 | id: 530
+
+
+
+tensor([[50256,  1169,  3139,   286,  4881,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠFrance', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of France is:
+
+Paris
+
+Paris is the capital of France. It is the largest city in France and the second largest
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.390197 | id: 198
+Token:  Paris          | prob: 0.208462 | id: 6342
+Token: 
+
+              | prob: 0.055776 | id: 628
+Token:  Le             | prob: 0.014508 | id: 1004
+Token:  L              | prob: 0.009402 | id: 406
+
+
+
+tensor([[50256,  1169,  3139,   286, 16519,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is Buenos Aires, the capital of Argentina is Buenos Aires, the capital of Argentina is Buenos Aires, the capital of Argentina is
+Próximo token gerado pelo modelo:
+ Buenos
+Top 5 tokens:
+Token:  Buenos         | prob: 0.175003 | id: 46210
+Token:  the            | prob: 0.123737 | id: 262
+Token:  a              | prob: 0.122490 | id: 257
+Token:  located        | prob: 0.047791 | id: 5140
+Token:  one            | prob: 0.023718 | id: 530
+
+
+
+tensor([[50256,  1169,  3139,   286, 16519,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠArgentina', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Argentina is:
+
+Argentina is a country in South America. It is bordered by Chile, Brazil, Paraguay
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.320760 | id: 198
+Token:  Buenos         | prob: 0.302934 | id: 46210
+Token: 
+
+              | prob: 0.023675 | id: 628
+Token:  La             | prob: 0.016849 | id: 4689
+Token:  San            | prob: 0.011484 | id: 2986
+
+
+
+tensor([[50256,  1169,  3139,   286, 36839,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is the capital of Slovakia is the capital of Slovakia
+
+Recent Examples on the Web
+
+The city is the capital of
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.131828 | id: 262
+Token:  located        | prob: 0.110309 | id: 5140
+Token:  a              | prob: 0.084176 | id: 257
+Token:  Br             | prob: 0.053261 | id: 1709
+Token:  in             | prob: 0.044243 | id: 287
+
+
+
+tensor([[50256,  1169,  3139,   286, 36839,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSlovakia', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Slovakia is:
+
+The capital of Slovakia is Bratislava.
+
+The capital of Slovakia is Bratislava
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.357092 | id: 198
+Token:  Br             | prob: 0.131710 | id: 1709
+Token:  K              | prob: 0.058297 | id: 509
+Token: 
+
+              | prob: 0.048897 | id: 628
+Token:  Prague         | prob: 0.018699 | id: 37079
+
+
+
+tensor([[50256,  1169,  3139,   286, 17333,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is Reykjavík. The capital is located in the north of Iceland, on the west coast of the country.
+Próximo token gerado pelo modelo:
+ Rey
+Top 5 tokens:
+Token:  Rey            | prob: 0.186183 | id: 24448
+Token:  the            | prob: 0.141256 | id: 262
+Token:  located        | prob: 0.070351 | id: 5140
+Token:  a              | prob: 0.068227 | id: 257
+Token:  beautiful      | prob: 0.017724 | id: 4950
+
+
+
+tensor([[50256,  1169,  3139,   286, 17333,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠIceland', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of Iceland is:
+
+The capital of Iceland is Reykjavík.
+
+The capital of Iceland is Reykjav
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.512788 | id: 198
+Token:  Rey            | prob: 0.128883 | id: 24448
+Token: 
+
+              | prob: 0.035021 | id: 628
+Token:  �              | prob: 0.031105 | id: 6184
+Token:  the            | prob: 0.017415 | id: 262
+
+
+
+tensor([[50256,  1169,  3139,   286,  2520,  5478,   318]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is the largest city in the country. It is located in the Eastern Cape province of South Africa. The city is also
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.137002 | id: 262
+Token:  a              | prob: 0.121289 | id: 257
+Token:  located        | prob: 0.038798 | id: 5140
+Token:  Cape           | prob: 0.036937 | id: 15725
+Token:  known          | prob: 0.021930 | id: 1900
+
+
+
+tensor([[50256,  1169,  3139,   286,  2520,  5478,   318,    25]])
+['the', 'Ġcapital', 'Ġof', 'ĠSouth', 'ĠAfrica', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the capital of South Africa is:
+
+The capital of South Africa is: Johannesburg
+
+The capital of South Africa is: Johannesburg
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.309615 | id: 198
+Token:  Johannes       | prob: 0.160074 | id: 38579
+Token:  Cape           | prob: 0.158541 | id: 15725
+Token: 
+
+              | prob: 0.039387 | id: 628
+Token:  Pret           | prob: 0.026982 | id: 37123
+
+
+
+tensor([[50256,  1544,  6619,   284,   607,   546,   465,  1492]])
+['He', 'Ġtalked', 'Ġto', 'Ġher', 'Ġabout', 'Ġhis', 'Ġbook']
+Próximos 30 tokens gerados pelo modelo:
+He talked to her about his book, and she said she was interested in it.
+
+"I was very excited," she said. "
+Próximo token gerado pelo modelo:
+,
+Top 5 tokens:
+Token: ,               | prob: 0.371111 | id: 11
+Token:  and            | prob: 0.177171 | id: 290
+Token: .               | prob: 0.108889 | id: 13
+Token:  about          | prob: 0.036068 | id: 546
+Token:  on             | prob: 0.024364 | id: 319
+
+
+

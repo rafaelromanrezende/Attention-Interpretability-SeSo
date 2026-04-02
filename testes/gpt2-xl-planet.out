@@ -1,0 +1,204 @@
+model: gpt2-xl, family: gpt
+tensor([[50256,  1169,  5440,   351,   262,   749, 13917,   318]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is the moon
+
+Recent Examples on the Web
+
+The moon is the only natural satellite of the Earth that
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.141389 | id: 262
+Token:  not            | prob: 0.082627 | id: 407
+Token:  Saturn         | prob: 0.067674 | id: 23135
+Token:  a              | prob: 0.035623 | id: 257
+Token:  Jupiter        | prob: 0.027648 | id: 22721
+
+
+
+tensor([[50256,  1169,  5440,   351,   262,   749, 13917,   318,    25]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is:
+
+the planet with the most moons is:
+
+the planet with the most moons is:
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.371145 | id: 198
+Token: 
+
+              | prob: 0.072781 | id: 628
+Token:  Saturn         | prob: 0.043199 | id: 23135
+Token:  the            | prob: 0.031952 | id: 262
+Token:  Jupiter        | prob: 0.027593 | id: 22721
+
+
+
+tensor([[50256,  1169,  5440,  1900,   355,   262,  2297, 11397,   318]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet is a very hostile place. It is a place where the atmosphere is so thin that it is possible to see
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.087498 | id: 257
+Token:  home           | prob: 0.063065 | id: 1363
+Token:  the            | prob: 0.054244 | id: 262
+Token:  not            | prob: 0.045751 | id: 407
+Token:  in             | prob: 0.028632 | id: 287
+
+
+
+tensor([[50256,  1169,  5440,  1900,   355,   262,  2297, 11397,   318,    25]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet is:
+
+a planet with a diameter of about 1,000 miles (1,600 km) and
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.447070 | id: 198
+Token:  a              | prob: 0.064985 | id: 257
+Token: 
+
+              | prob: 0.057050 | id: 628
+Token:  the            | prob: 0.025299 | id: 262
+Token:  1              | prob: 0.019866 | id: 352
+
+
+
+tensor([[50256,  1169, 18197,  5440,   287,   262,  6591,  1080,   318]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is the smallest planet in the solar system
+
+Recent Examples on the Web
+
+The tiny planet is about
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.114056 | id: 262
+Token:  a              | prob: 0.068837 | id: 257
+Token:  not            | prob: 0.057296 | id: 407
+Token:  called         | prob: 0.040795 | id: 1444
+Token:  also           | prob: 0.028333 | id: 635
+
+
+
+tensor([[50256,  1169, 18197,  5440,   287,   262,  6591,  1080,   318,    25]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is:
+
+Mercury
+
+Mercury is the smallest planet in the solar system. It is the
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.370335 | id: 198
+Token:  Mercury        | prob: 0.071280 | id: 21673
+Token: 
+
+              | prob: 0.059612 | id: 628
+Token:  Jupiter        | prob: 0.032099 | id: 22721
+Token:  Pluto          | prob: 0.031956 | id: 32217
+
+
+
+tensor([[50256,  1169,  5440, 15189,  3634,   422,   262,  3825,   318]])
+['the', 'Ġplanet', 'Ġfart', 'hest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is the planet Mercury
+
+the planet farthest from the Sun is the planet Mercury
+
+the planet fart
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.256352 | id: 262
+Token:  called         | prob: 0.064664 | id: 1444
+Token:  Pluto          | prob: 0.045783 | id: 32217
+Token:  in             | prob: 0.035901 | id: 287
+Token:  not            | prob: 0.033786 | id: 407
+
+
+
+tensor([[50256,  1169,  5440, 15189,  3634,   422,   262,  3825,   318,    25]])
+['the', 'Ġplanet', 'Ġfart', 'hest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is:
+
+The Sun is the center of our solar system. It is the source of all energy and
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.386849 | id: 198
+Token: 
+
+              | prob: 0.087536 | id: 628
+Token:  Mercury        | prob: 0.032085 | id: 21673
+Token:  the            | prob: 0.029894 | id: 262
+Token:  Earth          | prob: 0.021902 | id: 3668
+
+
+
+tensor([[50256,  1169,  4387,  5440,   287,   262,  6591,  1080,   318]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is the largest planet in the solar system
+
+Recent Examples on the Web
+
+The largest of the three
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.104548 | id: 262
+Token:  a              | prob: 0.084646 | id: 257
+Token:  not            | prob: 0.066238 | id: 407
+Token:  called         | prob: 0.032052 | id: 1444
+Token:  also           | prob: 0.021685 | id: 635
+
+
+
+tensor([[50256,  1169,  4387,  5440,   287,   262,  6591,  1080,   318,    25]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is:
+
+the largest planet in the solar system is:
+
+the largest planet in the solar system
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.366206 | id: 198
+Token:  Jupiter        | prob: 0.069536 | id: 22721
+Token: 
+
+              | prob: 0.066436 | id: 628
+Token:  Mercury        | prob: 0.055927 | id: 21673
+Token:  Saturn         | prob: 0.024841 | id: 23135
+
+
+

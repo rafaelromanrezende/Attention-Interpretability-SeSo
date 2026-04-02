@@ -1,0 +1,198 @@
+model: gpt2, family: gpt
+tensor([[50256,  1169,  5440,   351,   262,   749, 13917,   318]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is the planet with the most rings.
+
+The planet with the most rings is the planet with the most rings
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.133726 | id: 262
+Token:  a              | prob: 0.040635 | id: 257
+Token:  not            | prob: 0.018659 | id: 407
+Token:  called         | prob: 0.018224 | id: 1444
+Token:  in             | prob: 0.014665 | id: 287
+
+
+
+tensor([[50256,  1169,  5440,   351,   262,   749, 13917,   318,    25]])
+['the', 'Ġplanet', 'Ġwith', 'Ġthe', 'Ġmost', 'Ġrings', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet with the most rings is:
+
+the planet with the most rings is:
+
+the planet with the most rings is:
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.240325 | id: 198
+Token:  the            | prob: 0.046204 | id: 262
+Token: 
+
+              | prob: 0.028777 | id: 628
+Token:  1              | prob: 0.020555 | id: 352
+Token:  The            | prob: 0.017759 | id: 383
+
+
+
+tensor([[50256,  1169,  5440,  1900,   355,   262,  2297, 11397,   318]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet is a planet in the solar system known as the Red Planet. It is a planet in the solar system known
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.134026 | id: 257
+Token:  the            | prob: 0.063730 | id: 262
+Token:  located        | prob: 0.034540 | id: 5140
+Token:  an             | prob: 0.030772 | id: 281
+Token:  home           | prob: 0.029101 | id: 1363
+
+
+
+tensor([[50256,  1169,  5440,  1900,   355,   262,  2297, 11397,   318,    25]])
+['the', 'Ġplanet', 'Ġknown', 'Ġas', 'Ġthe', 'ĠRed', 'ĠPlanet', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet known as the Red Planet is:
+
+the planet known as the Red Planet is:
+
+the planet known as the Red Planet
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.285611 | id: 198
+Token:  the            | prob: 0.053461 | id: 262
+Token:  a              | prob: 0.040947 | id: 257
+Token:  The            | prob: 0.030578 | id: 383
+Token: 
+
+              | prob: 0.028692 | id: 628
+
+
+
+tensor([[50256,  1169, 18197,  5440,   287,   262,  6591,  1080,   318]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is about 1.5 light-years away from Earth.
+
+The planet is about 1.5 light
+Próximo token gerado pelo modelo:
+ about
+Top 5 tokens:
+Token:  about          | prob: 0.152013 | id: 546
+Token:  a              | prob: 0.048490 | id: 257
+Token:  the            | prob: 0.042043 | id: 262
+Token:  located        | prob: 0.030758 | id: 5140
+Token:  only           | prob: 0.029411 | id: 691
+
+
+
+tensor([[50256,  1169, 18197,  5440,   287,   262,  6591,  1080,   318,    25]])
+['the', 'Ġsmallest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the smallest planet in the solar system is:
+
+the smallest planet in the solar system is:
+
+the smallest planet in the solar system
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.249947 | id: 198
+Token:  the            | prob: 0.048714 | id: 262
+Token:  a              | prob: 0.032370 | id: 257
+Token: 
+
+              | prob: 0.031082 | id: 628
+Token:  1              | prob: 0.020474 | id: 352
+
+
+
+tensor([[50256,  1169,  5440, 15189,  3634,   422,   262,  3825,   318]])
+['the', 'Ġplanet', 'Ġfart', 'hest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is the farthest from the Sun is the farthest from the Sun is the farthest from the Sun is
+Próximo token gerado pelo modelo:
+ the
+Top 5 tokens:
+Token:  the            | prob: 0.097412 | id: 262
+Token:  a              | prob: 0.063320 | id: 257
+Token:  about          | prob: 0.024165 | id: 546
+Token:  not            | prob: 0.020454 | id: 407
+Token:  fart           | prob: 0.019277 | id: 15189
+
+
+
+tensor([[50256,  1169,  5440, 15189,  3634,   422,   262,  3825,   318,    25]])
+['the', 'Ġplanet', 'Ġfart', 'hest', 'Ġfrom', 'Ġthe', 'ĠSun', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the planet farthest from the Sun is:
+
+the planet farthest from the Sun is:
+
+the planet farthest from the Sun
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.280997 | id: 198
+Token:  the            | prob: 0.047206 | id: 262
+Token: 
+
+              | prob: 0.030788 | id: 628
+Token:  1              | prob: 0.028062 | id: 352
+Token:  a              | prob: 0.022601 | id: 257
+
+
+
+tensor([[50256,  1169,  4387,  5440,   287,   262,  6591,  1080,   318]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is about to be discovered.
+
+The discovery of the largest planet in the solar system is about to be
+Próximo token gerado pelo modelo:
+ about
+Top 5 tokens:
+Token:  about          | prob: 0.081218 | id: 546
+Token:  located        | prob: 0.065374 | id: 5140
+Token:  a              | prob: 0.044621 | id: 257
+Token:  the            | prob: 0.044111 | id: 262
+Token:  now            | prob: 0.024776 | id: 783
+
+
+
+tensor([[50256,  1169,  4387,  5440,   287,   262,  6591,  1080,   318,    25]])
+['the', 'Ġlargest', 'Ġplanet', 'Ġin', 'Ġthe', 'Ġsolar', 'Ġsystem', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the largest planet in the solar system is:
+
+the largest planet in the solar system is:
+
+the largest planet in the solar system
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.265789 | id: 198
+Token:  the            | prob: 0.046141 | id: 262
+Token: 
+
+              | prob: 0.032518 | id: 628
+Token:  a              | prob: 0.024464 | id: 257
+Token:  1              | prob: 0.016807 | id: 352
+
+
+

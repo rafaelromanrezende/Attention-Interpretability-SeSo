@@ -1,0 +1,217 @@
+model: gpt2-xl, family: gpt
+tensor([[50256,  1169,  1772,   286,   383, 16055,  9375, 45983,   709,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠKar', 'amaz', 'ov', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is a Russian-born Jew who was born in 1826 in the town of Tiflis, in
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.181712 | id: 257
+Token:  the            | prob: 0.051666 | id: 262
+Token:  not            | prob: 0.049502 | id: 407
+Token:  one            | prob: 0.041666 | id: 530
+Token:  an             | prob: 0.040781 | id: 281
+
+
+
+tensor([[50256,  1169,  1772,   286,   383, 16055,  9375, 45983,   709,   318,
+            25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠBrothers', 'ĠKar', 'amaz', 'ov', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Brothers Karamazov is:
+
+A.N. Whitehead
+
+A.N. Whitehead is a British
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.458603 | id: 198
+Token: 
+
+              | prob: 0.059534 | id: 628
+Token:  F              | prob: 0.019490 | id: 376
+Token:  V              | prob: 0.012161 | id: 569
+Token:  Vladimir       | prob: 0.011983 | id: 14840
+
+
+
+tensor([[50256,  1169,  1772,   286,   383,  7703,  9005,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is a man who has been called "the most important living writer of our time."
+
+The Little Prince is
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.164345 | id: 257
+Token:  the            | prob: 0.046264 | id: 262
+Token:  an             | prob: 0.042782 | id: 281
+Token:  not            | prob: 0.042516 | id: 407
+Token:  now            | prob: 0.031700 | id: 783
+
+
+
+tensor([[50256,  1169,  1772,   286,   383,  7703,  9005,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠThe', 'ĠLittle', 'ĠPrince', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of The Little Prince is:
+
+a French writer,
+
+a French philosopher,
+
+a French poet,
+
+a
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.485827 | id: 198
+Token: 
+
+              | prob: 0.069895 | id: 628
+Token:  "              | prob: 0.022317 | id: 366
+Token:  a              | prob: 0.021923 | id: 257
+Token:  the            | prob: 0.015792 | id: 262
+
+
+
+tensor([[50256,  1169,  1772,   286,  4345,  1616,   318]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is a man of many talents. He is a poet, a playwright, a novelist, a playwright-director
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.142310 | id: 257
+Token:  the            | prob: 0.064539 | id: 262
+Token:  not            | prob: 0.061043 | id: 407
+Token:  dead           | prob: 0.039660 | id: 2636
+Token:  an             | prob: 0.024535 | id: 281
+
+
+
+tensor([[50256,  1169,  1772,   286,  4345,  1616,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠHam', 'let', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of Hamlet is:
+
+a man named William Shakespeare
+
+who lived in:
+
+England
+
+who wrote:
+
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.377461 | id: 198
+Token: 
+
+              | prob: 0.059855 | id: 628
+Token:  William        | prob: 0.033496 | id: 3977
+Token:  the            | prob: 0.023541 | id: 262
+Token:  "              | prob: 0.021623 | id: 366
+
+
+
+tensor([[50256,  1169,   717,  2415,   287,  2272,   318]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is a woman of color
+
+The first woman in space is a woman of color.
+
+The first woman in
+Próximo token gerado pelo modelo:
+ a
+Top 5 tokens:
+Token:  a              | prob: 0.154480 | id: 257
+Token:  the            | prob: 0.035456 | id: 262
+Token:  an             | prob: 0.035437 | id: 281
+Token:  now            | prob: 0.029340 | id: 783
+Token:  not            | prob: 0.026785 | id: 407
+
+
+
+tensor([[50256,  1169,   717,  2415,   287,  2272,   318,    25]])
+['the', 'Ġfirst', 'Ġwoman', 'Ġin', 'Ġspace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the first woman in space is:
+
+a woman who is a scientist
+
+a woman who is a doctor
+
+a woman who is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.389814 | id: 198
+Token: 
+
+              | prob: 0.056758 | id: 628
+Token:  a              | prob: 0.031080 | id: 257
+Token:  the            | prob: 0.016110 | id: 262
+Token:  "              | prob: 0.011129 | id: 366
+
+
+
+tensor([[50256,  1169,  1772,   286,  1810,   290, 12689,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is:
+
+A.I.D.A.
+
+A.I.D.A. is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.380052 | id: 198
+Token: 
+
+              | prob: 0.047952 | id: 628
+Token:  "              | prob: 0.021439 | id: 366
+Token:  a              | prob: 0.017656 | id: 257
+Token:  the            | prob: 0.015050 | id: 262
+
+
+
+tensor([[50256,  1169,  1772,   286,  1810,   290, 12689,   318,    25]])
+['the', 'Ġauthor', 'Ġof', 'ĠWar', 'Ġand', 'ĠPeace', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the author of War and Peace is:
+
+A.I.D.A.
+
+A.I.D.A. is
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.380052 | id: 198
+Token: 
+
+              | prob: 0.047952 | id: 628
+Token:  "              | prob: 0.021439 | id: 366
+Token:  a              | prob: 0.017656 | id: 257
+Token:  the            | prob: 0.015050 | id: 262
+
+
+

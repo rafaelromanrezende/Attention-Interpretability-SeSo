@@ -1,0 +1,204 @@
+model: gpt2-xl, family: gpt
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is Au
+
+The chemical symbol for gold is Au
+
+Gold is a very common element. It is found in
+Próximo token gerado pelo modelo:
+ Au
+Top 5 tokens:
+Token:  Au             | prob: 0.842046 | id: 40666
+Token:  gold           | prob: 0.014583 | id: 3869
+Token:  '              | prob: 0.010089 | id: 705
+Token:  a              | prob: 0.008002 | id: 257
+Token: 
+               | prob: 0.005588 | id: 198
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  3869,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġgold', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for gold is: Au
+
+The chemical symbol for silver is: Ag
+
+The chemical symbol for copper is: Cu
+
+Próximo token gerado pelo modelo:
+ Au
+Top 5 tokens:
+Token:  Au             | prob: 0.319955 | id: 40666
+Token: 
+               | prob: 0.318226 | id: 198
+Token:  Fe             | prob: 0.036003 | id: 5452
+Token: 
+
+              | prob: 0.020677 | id: 628
+Token:  H              | prob: 0.015186 | id: 367
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is silver
+
+Silver is a metal that is used in many different applications. It is used in the manufacture of jew
+Próximo token gerado pelo modelo:
+ silver
+Top 5 tokens:
+Token:  silver         | prob: 0.212781 | id: 8465
+Token:  Si             | prob: 0.182148 | id: 15638
+Token:  S              | prob: 0.047229 | id: 311
+Token:  a              | prob: 0.034962 | id: 257
+Token:  Au             | prob: 0.034267 | id: 40666
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is:
+
+The chemical symbol for silver is:
+
+The chemical symbol for silver is:
+
+The chemical
+Próximo token gerado pelo modelo:
+
+
+Top 5 tokens:
+Token: 
+               | prob: 0.313147 | id: 198
+Token:  Si             | prob: 0.153304 | id: 15638
+Token:  S              | prob: 0.055896 | id: 311
+Token:  Fe             | prob: 0.034153 | id: 5452
+Token: 
+
+              | prob: 0.026170 | id: 628
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  8465,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsilver', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for silver is silver
+
+Silver is a metal that is used in many different applications. It is used in the manufacture of jew
+Próximo token gerado pelo modelo:
+ silver
+Top 5 tokens:
+Token:  silver         | prob: 0.212781 | id: 8465
+Token:  Si             | prob: 0.182148 | id: 15638
+Token:  S              | prob: 0.047229 | id: 311
+Token:  a              | prob: 0.034962 | id: 257
+Token:  Au             | prob: 0.034267 | id: 40666
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  6953,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġiron', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for iron is: Fe
+
+the chemical symbol for oxygen is: O
+
+the chemical symbol for hydrogen is: H
+
+Próximo token gerado pelo modelo:
+ Fe
+Top 5 tokens:
+Token:  Fe             | prob: 0.955125 | id: 5452
+Token: 
+               | prob: 0.015326 | id: 198
+Token: Fe              | prob: 0.006004 | id: 14304
+Token:  I              | prob: 0.001308 | id: 314
+Token:  H              | prob: 0.001222 | id: 367
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is H2O
+
+Water is a basic element that is found in all living things. It is the most common
+Próximo token gerado pelo modelo:
+ H
+Top 5 tokens:
+Token:  H              | prob: 0.882202 | id: 367
+Token:  C              | prob: 0.011638 | id: 327
+Token:  the            | prob: 0.004915 | id: 262
+Token:  a              | prob: 0.004533 | id: 257
+Token:  HO             | prob: 0.004455 | id: 40115
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329,  1660,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġwater', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for water is: H
+
+The chemical symbol for water is: H
+
+The chemical symbol for water is: H
+
+Próximo token gerado pelo modelo:
+ H
+Top 5 tokens:
+Token:  H              | prob: 0.372182 | id: 367
+Token: 
+               | prob: 0.200573 | id: 198
+Token:  CH             | prob: 0.057198 | id: 5870
+Token:  C              | prob: 0.036380 | id: 327
+Token:  Na             | prob: 0.027942 | id: 11013
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is Na
+
+The chemical symbol for sodium is Na
+
+The chemical symbol for sodium is Na
+
+The chemical
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.370148 | id: 11013
+Token:  sodium         | prob: 0.119041 | id: 21072
+Token:  S              | prob: 0.035688 | id: 311
+Token:  #              | prob: 0.026757 | id: 1303
+Token:  a              | prob: 0.024436 | id: 257
+
+
+
+tensor([[50256,  1169,  5931,  6194,   329, 21072,   318,    25]])
+['the', 'Ġchemical', 'Ġsymbol', 'Ġfor', 'Ġsodium', 'Ġis', ':']
+Próximos 30 tokens gerados pelo modelo:
+the chemical symbol for sodium is: Na
+
+The chemical symbol for potassium is: K
+
+The chemical symbol for calcium is: Ca
+
+Próximo token gerado pelo modelo:
+ Na
+Top 5 tokens:
+Token:  Na             | prob: 0.533809 | id: 11013
+Token: 
+               | prob: 0.206678 | id: 198
+Token: Na              | prob: 0.041624 | id: 26705
+Token:  sodium         | prob: 0.027991 | id: 21072
+Token:  S              | prob: 0.019155 | id: 311
+
+
+
