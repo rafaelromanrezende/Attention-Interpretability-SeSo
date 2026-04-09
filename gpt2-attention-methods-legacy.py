@@ -178,7 +178,7 @@ for ex_id in range(len(sentences)):
 
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
 
-    res_att_mat = res_att_mat + 0.1*np.eye(res_att_mat.shape[1])[None,...]
+    res_att_mat = res_att_mat + 0.5*np.eye(res_att_mat.shape[1])[None,...]
 
     # renormaliza, mesma coisa de dividir por dois
     res_att_mat = res_att_mat / res_att_mat.sum(axis=-1)[...,None]
