@@ -1,0 +1,539 @@
+
+[Capitais] Processando sentença 1/5: 'the capital of France is'
+Input IDs: [1782, 6722, 315, 9625, 374]
+Tokens: ['the', ' capital', ' of', ' France', ' is']
+Attention Matrix Shape: (48, 40, 5, 5)
+
+Próximos 30 tokens gerados pelo modelo:
+ Paris
+The capital of France is indeed Paris. It is the largest city in the country and is known for its rich history, culture, and iconic
+
+Próximo token isolado gerado pelo modelo:
+ Paris
+
+Top 5 tokens:
+Token:  Paris          | prob: 0.393048 | id: 12095
+Token: \n              | prob: 0.045139 | id: 198
+Token:  __             | prob: 0.040646 | id: 1304
+Token:  in             | prob: 0.032891 | id: 304
+Token: ____            | prob: 0.032147 | id: 2130
+
+
+
+
+[Capitais] Processando sentença 2/5: 'the capital of Argentina is'
+Input IDs: [1782, 6722, 315, 31064, 374]
+Tokens: ['the', ' capital', ' of', ' Argentina', ' is']
+Attention Matrix Shape: (48, 40, 5, 5)
+
+Próximos 30 tokens gerados pelo modelo:
+ Buenos Aires. The city is located on the western shore of the Río de la Plata, on the southeastern coast of the South American continent.
+
+Próximo token isolado gerado pelo modelo:
+ Buenos
+
+Top 5 tokens:
+Token:  Buenos         | prob: 0.204455 | id: 68073
+Token:  located        | prob: 0.063494 | id: 7407
+Token: \n              | prob: 0.056921 | id: 198
+Token:  in             | prob: 0.056569 | id: 304
+Token: :\n             | prob: 0.039144 | id: 510
+
+
+
+
+[Capitais] Processando sentença 3/5: 'the capital of Slovakia is'
+Input IDs: [1782, 6722, 315, 80685, 374]
+Tokens: ['the', ' capital', ' of', ' Slovakia', ' is']
+Attention Matrix Shape: (48, 40, 5, 5)
+
+Próximos 30 tokens gerados pelo modelo:
+ Bratislava
+This justifies what answer for what question? Q & A:
+Question: What is the capital city of Slovakia?
+
+Answer:
+
+Próximo token isolado gerado pelo modelo:
+ Br
+
+Top 5 tokens:
+Token:  Br             | prob: 0.233272 | id: 3240
+Token:  br             | prob: 0.166456 | id: 1411
+Token: \n              | prob: 0.042778 | id: 198
+Token: :\n             | prob: 0.039864 | id: 510
+Token:  __             | prob: 0.030279 | id: 1304
+
+
+
+
+[Capitais] Processando sentença 4/5: 'the capital of Iceland is'
+Input IDs: [1782, 6722, 315, 38396, 374]
+Tokens: ['the', ' capital', ' of', ' Iceland', ' is']
+Attention Matrix Shape: (48, 40, 5, 5)
+
+Próximos 30 tokens gerados pelo modelo:
+ Reykjavik
+The capital of Iceland is Reykjavik.
+
+Próximo token isolado gerado pelo modelo:
+ Rey
+
+Top 5 tokens:
+Token:  Rey            | prob: 0.575846 | id: 48212
+Token:  re             | prob: 0.043105 | id: 312
+Token: \n              | prob: 0.030798 | id: 198
+Token:  __             | prob: 0.024547 | id: 1304
+Token: :\n             | prob: 0.015483 | id: 510
+
+
+
+
+[Capitais] Processando sentença 5/5: 'the capital of South Africa is'
+Input IDs: [1782, 6722, 315, 4882, 10174, 374]
+Tokens: ['the', ' capital', ' of', ' South', ' Africa', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ Pretoria
+The capital of South Africa is Pretoria.
+
+Próximo token isolado gerado pelo modelo:
+ Pret
+
+Top 5 tokens:
+Token:  Pret           | prob: 0.197463 | id: 61939
+Token:  Cape           | prob: 0.063359 | id: 28615
+Token: \n              | prob: 0.058363 | id: 198
+Token:  __             | prob: 0.035165 | id: 1304
+Token:  ______         | prob: 0.033695 | id: 32671
+
+
+
+
+[Planetas] Processando sentença 1/5: 'the planet with the most rings is'
+Input IDs: [1782, 11580, 448, 279, 1429, 24544, 374]
+Tokens: ['the', ' planet', ' with', ' the', ' most', ' rings', ' is']
+Attention Matrix Shape: (48, 40, 7, 7)
+
+Próximos 30 tokens gerados pelo modelo:
+ saturn.  Given the context: How would you describe the rings of Saturn?  Possible answers: very small, very large, very small
+Answer
+
+Próximo token isolado gerado pelo modelo:
+ saturn
+
+Top 5 tokens:
+Token:  saturn         | prob: 0.154505 | id: 84689
+Token: \n              | prob: 0.091748 | id: 198
+Token:  Saturn         | prob: 0.073946 | id: 49153
+Token: :\n             | prob: 0.064895 | id: 510
+Token: ?\n             | prob: 0.041392 | id: 5267
+
+
+
+
+[Planetas] Processando sentença 2/5: 'the planet known as the Red Planet is'
+Input IDs: [1782, 11580, 3881, 438, 279, 3731, 28835, 374]
+Tokens: ['the', ' planet', ' known', ' as', ' the', ' Red', ' Planet', ' is']
+Attention Matrix Shape: (48, 40, 8, 8)
+
+Próximos 30 tokens gerados pelo modelo:
+ Mars. It is the fourth planet from the Sun in the solar system. It is also the second smallest planet in the solar system. The planet is
+
+Próximo token isolado gerado pelo modelo:
+ Mars
+
+Top 5 tokens:
+Token:  Mars           | prob: 0.145418 | id: 21048
+Token: ____            | prob: 0.106142 | id: 2130
+Token:  ____           | prob: 0.076890 | id: 30743
+Token: \n              | prob: 0.061062 | id: 198
+Token:  __             | prob: 0.058022 | id: 1304
+
+
+
+
+[Planetas] Processando sentença 3/5: 'the smallest planet in the solar system is'
+Input IDs: [1782, 24632, 11580, 304, 279, 12941, 1849, 374]
+Tokens: ['the', ' smallest', ' planet', ' in', ' the', ' solar', ' system', ' is']
+Attention Matrix Shape: (48, 40, 8, 8)
+
+Próximos 30 tokens gerados pelo modelo:
+ mercury. the largest planet is jupiter. the diameter of jupiter is about 11 times the diameter of mercury. the diameter of mercury is
+
+Próximo token isolado gerado pelo modelo:
+ mercury
+
+Top 5 tokens:
+Token:  mercury        | prob: 0.262996 | id: 50752
+Token:  ____           | prob: 0.068416 | id: 30743
+Token:  Mercury        | prob: 0.042849 | id: 43562
+Token: ____            | prob: 0.036800 | id: 2130
+Token:  also           | prob: 0.035390 | id: 1083
+
+
+
+
+[Planetas] Processando sentença 4/5: 'the planet farthest from the Sun is'
+Input IDs: [1782, 11580, 3041, 60843, 504, 279, 8059, 374]
+Tokens: ['the', ' planet', ' far', 'thest', ' from', ' the', ' Sun', ' is']
+Attention Matrix Shape: (48, 40, 8, 8)
+
+Próximos 30 tokens gerados pelo modelo:
+ Neptune.
+The planet farthest from the Sun is Neptune. Neptune is the eighth and farthest known planet from the Sun in the Solar System. In
+
+Próximo token isolado gerado pelo modelo:
+ Neptune
+
+Top 5 tokens:
+Token:  Neptune        | prob: 0.112458 | id: 79624
+Token: \n              | prob: 0.105275 | id: 198
+Token:  Pluto          | prob: 0.060953 | id: 77581
+Token:  called         | prob: 0.058657 | id: 2598
+Token:  ____           | prob: 0.055820 | id: 30743
+
+
+
+
+[Planetas] Processando sentença 5/5: 'the largest planet in the solar system is'
+Input IDs: [1782, 7772, 11580, 304, 279, 12941, 1849, 374]
+Tokens: ['the', ' largest', ' planet', ' in', ' the', ' solar', ' system', ' is']
+Attention Matrix Shape: (48, 40, 8, 8)
+
+Próximos 30 tokens gerados pelo modelo:
+ jupiter , which has a mass of 1.90 × 1027 kg and a radius of 7.14 ×
+
+Próximo token isolado gerado pelo modelo:
+ j
+
+Top 5 tokens:
+Token:  j              | prob: 0.221084 | id: 502
+Token:  ____           | prob: 0.096773 | id: 30743
+Token: \n              | prob: 0.040419 | id: 198
+Token:  Jupiter        | prob: 0.037084 | id: 49689
+Token:  ______         | prob: 0.035892 | id: 32671
+
+
+
+
+[Simbolos Quimicos] Processando sentença 1/5: 'the chemical symbol for gold is'
+Input IDs: [1782, 11483, 7735, 369, 6623, 374]
+Tokens: ['the', ' chemical', ' symbol', ' for', ' gold', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ au, and its atomic number is 79. which of the following statements is true about gold?
+A. it has 79 protons
+
+Próximo token isolado gerado pelo modelo:
+ au
+
+Top 5 tokens:
+Token:  au             | prob: 0.588314 | id: 7906
+Token:  Au             | prob: 0.068804 | id: 32050
+Token:  '              | prob: 0.040273 | id: 364
+Token:  "              | prob: 0.031309 | id: 330
+Token:  a              | prob: 0.018184 | id: 264
+
+
+
+
+[Simbolos Quimicos] Processando sentença 2/5: 'the chemical symbol for silver is'
+Input IDs: [1782, 11483, 7735, 369, 14961, 374]
+Tokens: ['the', ' chemical', ' symbol', ' for', ' silver', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ ag. the chemical symbol for gold is au. the chemical symbol for platinum is pt. the chemical symbol for lead is pb. the chemical symbol for
+
+Próximo token isolado gerado pelo modelo:
+ ag
+
+Top 5 tokens:
+Token:  ag             | prob: 0.541725 | id: 933
+Token:  Ag             | prob: 0.049279 | id: 4598
+Token:  '              | prob: 0.035796 | id: 364
+Token:  au             | prob: 0.031093 | id: 7906
+Token: \n              | prob: 0.026187 | id: 198
+
+
+
+
+[Simbolos Quimicos] Processando sentença 3/5: 'the chemical symbol for iron is'
+Input IDs: [1782, 11483, 7735, 369, 11001, 374]
+Tokens: ['the', ' chemical', ' symbol', ' for', ' iron', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ fe. the chemical symbol for iron is fe. what is the chemical symbol for iron? the chemical symbol for iron is fe. what is the chemical
+
+Próximo token isolado gerado pelo modelo:
+ fe
+
+Top 5 tokens:
+Token:  fe             | prob: 0.697781 | id: 1152
+Token:  Fe             | prob: 0.035550 | id: 3841
+Token:  '              | prob: 0.026810 | id: 364
+Token:  "              | prob: 0.020764 | id: 330
+Token: \n              | prob: 0.019984 | id: 198
+
+
+
+
+[Simbolos Quimicos] Processando sentença 4/5: 'the chemical symbol for water is'
+Input IDs: [1782, 11483, 7735, 369, 3015, 374]
+Tokens: ['the', ' chemical', ' symbol', ' for', ' water', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ h2o. what does the subscript 2 indicate?
+The subscript 2 in the chemical symbol for water (H2O) indicates that there
+
+Próximo token isolado gerado pelo modelo:
+ h
+
+Top 5 tokens:
+Token:  h              | prob: 0.488632 | id: 305
+Token:  H              | prob: 0.080373 | id: 472
+Token: \n              | prob: 0.044113 | id: 198
+Token: \n\n            | prob: 0.026499 | id: 271
+Token: :\n             | prob: 0.024061 | id: 510
+
+
+
+
+[Simbolos Quimicos] Processando sentença 5/5: 'the chemical symbol for sodium is'
+Input IDs: [1782, 11483, 7735, 369, 38595, 374]
+Tokens: ['the', ' chemical', ' symbol', ' for', ' sodium', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ na. the chemical symbol for chlorine is cl. sodium chloride is a compound made from sodium and chlorine. what is the chemical formula for sodium chloride?
+
+
+Próximo token isolado gerado pelo modelo:
+ na
+
+Top 5 tokens:
+Token:  na             | prob: 0.579592 | id: 4317
+Token:  '              | prob: 0.053603 | id: 364
+Token:  "              | prob: 0.028135 | id: 330
+Token:  Na             | prob: 0.027608 | id: 12812
+Token: \n              | prob: 0.024758 | id: 198
+
+
+
+
+[Pessoas e Autores] Processando sentença 1/5: 'the author of The Brothers Karamazov is'
+Input IDs: [1782, 3150, 315, 576, 33079, 730, 637, 1370, 859, 374]
+Tokens: ['the', ' author', ' of', ' The', ' Brothers', ' K', 'aram', 'az', 'ov', ' is']
+Attention Matrix Shape: (48, 40, 10, 10)
+
+Próximos 30 tokens gerados pelo modelo:
+
+A. Leo Tolstoy
+B. Anton Chekhov
+C. Fyodor Dostoevsky
+D. Nikolai
+
+Próximo token isolado gerado pelo modelo:
+
+
+
+Top 5 tokens:
+Token: \n              | prob: 0.115318 | id: 198
+Token:  ______         | prob: 0.074902 | id: 32671
+Token:  __             | prob: 0.063944 | id: 1304
+Token:  ____           | prob: 0.055460 | id: 30743
+Token:  a              | prob: 0.046199 | id: 264
+
+
+
+
+[Pessoas e Autores] Processando sentença 2/5: 'the author of The Little Prince is'
+Input IDs: [1782, 3150, 315, 576, 14671, 19351, 374]
+Tokens: ['the', ' author', ' of', ' The', ' Little', ' Prince', ' is']
+Attention Matrix Shape: (48, 40, 7, 7)
+
+Próximos 30 tokens gerados pelo modelo:
+____
+A. Antoine de Saint-Exupéry
+B. J.K. Rowling
+C. Mark Twain
+D. Charles Dickens
+
+Próximo token isolado gerado pelo modelo:
+____
+
+Top 5 tokens:
+Token: ____            | prob: 0.127839 | id: 2130
+Token:  __             | prob: 0.083253 | id: 1304
+Token:  a              | prob: 0.068454 | id: 264
+Token:  ______         | prob: 0.067117 | id: 32671
+Token:  ____           | prob: 0.060663 | id: 30743
+
+
+
+
+[Pessoas e Autores] Processando sentença 3/5: 'the author of Hamlet is'
+Input IDs: [1782, 3150, 315, 9582, 1149, 374]
+Tokens: ['the', ' author', ' of', ' Ham', 'let', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ ______.
+A. William Shakespeare
+B. John Milton
+C. Charles Dickens
+D. Jane Austen
+答案:
+A
+
+下列关于“
+
+Próximo token isolado gerado pelo modelo:
+ ______
+
+Top 5 tokens:
+Token:  ______         | prob: 0.156799 | id: 32671
+Token: ____            | prob: 0.134872 | id: 2130
+Token:  __             | prob: 0.130537 | id: 1304
+Token:  ____           | prob: 0.105050 | id: 30743
+Token: \n              | prob: 0.093025 | id: 198
+
+
+
+
+[Pessoas e Autores] Processando sentença 4/5: 'the first woman in space is'
+Input IDs: [1782, 1156, 5220, 304, 3550, 374]
+Tokens: ['the', ' first', ' woman', ' in', ' space', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ valentina tereshkova from the soviet union. she was born on march 6, 1937, in the y
+
+Próximo token isolado gerado pelo modelo:
+ val
+
+Top 5 tokens:
+Token:  val            | prob: 0.273126 | id: 1044
+Token:  a              | prob: 0.115240 | id: 264
+Token:  from           | prob: 0.043466 | id: 504
+Token:  cos            | prob: 0.039748 | id: 7960
+Token:  the            | prob: 0.036087 | id: 279
+
+
+
+
+[Pessoas e Autores] Processando sentença 5/5: 'the author of War and Peace is'
+Input IDs: [1782, 3150, 315, 5004, 323, 25803, 374]
+Tokens: ['the', ' author', ' of', ' War', ' and', ' Peace', ' is']
+Attention Matrix Shape: (48, 40, 7, 7)
+
+Próximos 30 tokens gerados pelo modelo:
+____
+A. Leo Tolstoy
+B. Charles Dickens
+C. Mark Twain
+D. Ernest Hemingway
+答案:
+A
+
+Próximo token isolado gerado pelo modelo:
+____
+
+Top 5 tokens:
+Token: ____            | prob: 0.091825 | id: 2130
+Token:  Leo            | prob: 0.087267 | id: 36748
+Token:  ______         | prob: 0.086056 | id: 32671
+Token: \n              | prob: 0.075867 | id: 198
+Token:  __             | prob: 0.071812 | id: 1304
+
+
+
+
+[Numeros e Fatos] Processando sentença 1/5: 'the year World War II ended is'
+Input IDs: [1782, 1042, 4337, 5004, 7946, 9482, 374]
+Tokens: ['the', ' year', ' World', ' War', ' II', ' ended', ' is']
+Attention Matrix Shape: (48, 40, 7, 7)
+
+Próximos 30 tokens gerados pelo modelo:
+ 1945. The year World War I ended is 1918. The number of years between the end of World War I
+
+Próximo token isolado gerado pelo modelo:
+ 
+
+Top 5 tokens:
+Token:                 | prob: 0.309537 | id: 220
+Token:  the            | prob: 0.099409 | id: 279
+Token:  a              | prob: 0.071824 | id: 264
+Token:  also           | prob: 0.040436 | id: 1083
+Token:  an             | prob: 0.038455 | id: 458
+
+
+
+
+[Numeros e Fatos] Processando sentença 2/5: 'the first Olympic Games year is'
+Input IDs: [1782, 1156, 24900, 11610, 1042, 374]
+Tokens: ['the', ' first', ' Olympic', ' Games', ' year', ' is']
+Attention Matrix Shape: (48, 40, 6, 6)
+
+Próximos 30 tokens gerados pelo modelo:
+ 1896, and the next Olympic Games year is 1900. The Olympic Games are held every four years. So the
+
+Próximo token isolado gerado pelo modelo:
+ 
+
+Top 5 tokens:
+Token:                 | prob: 0.297067 | id: 220
+Token: ____            | prob: 0.069345 | id: 2130
+Token:  ____           | prob: 0.052121 | id: 30743
+Token:  __             | prob: 0.050058 | id: 1304
+Token:  in             | prob: 0.043159 | id: 304
+
+
+
+
+[Numeros e Fatos] Processando sentença 3/5: 'the number of planets in the solar system is'
+Input IDs: [1782, 1372, 315, 32875, 304, 279, 12941, 1849, 374]
+Tokens: ['the', ' number', ' of', ' planets', ' in', ' the', ' solar', ' system', ' is']
+Attention Matrix Shape: (48, 40, 9, 9)
+
+Próximos 30 tokens gerados pelo modelo:
+ 8. The number of moons orbiting Jupiter is 79. What is the ratio of the number of moons orbiting Jupiter to the number
+
+Próximo token isolado gerado pelo modelo:
+ 
+
+Top 5 tokens:
+Token:                 | prob: 0.324898 | id: 220
+Token:  nine           | prob: 0.070336 | id: 11627
+Token: \n              | prob: 0.042250 | id: 198
+Token:  ____           | prob: 0.037314 | id: 30743
+Token: ____            | prob: 0.035871 | id: 2130
+
+
+
+
+[Numeros e Fatos] Processando sentença 4/5: 'the speed of light in vacuum (in km/s) is'
+Input IDs: [1782, 4628, 315, 3100, 304, 28202, 320, 258, 13136, 2687, 8, 374]
+Tokens: ['the', ' speed', ' of', ' light', ' in', ' vacuum', ' (', 'in', ' km', '/s', ')', ' is']
+Attention Matrix Shape: (48, 40, 12, 12)
+
+Próximos 30 tokens gerados pelo modelo:
+ 300000. express it in standard form.\nAsked by | 27th May, 2012,
+
+Próximo token isolado gerado pelo modelo:
+ 
+
+Top 5 tokens:
+Token:                 | prob: 0.187219 | id: 220
+Token:  approximately  | prob: 0.092734 | id: 13187
+Token: \n              | prob: 0.077663 | id: 1699
+Token:  about          | prob: 0.058437 | id: 911
+Token:  ______         | prob: 0.056964 | id: 32671
+
+
+
