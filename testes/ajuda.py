@@ -1,5 +1,4 @@
 import os
-import pathlib
 
 for idx, i in enumerate(list(os.listdir("./testes"))):
     if(idx %4 ==0 ):

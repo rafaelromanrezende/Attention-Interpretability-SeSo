@@ -22,15 +22,11 @@ from pathlib import Path
 
 
 def plot_attention_heatmap(att, s_position, t_positions, tokens_list):
-    # Pega o slice normalmente
-    cls_att = np.flip(att[:, s_position, t_positions], axis=0).copy()
-    
-    cls_att[:, s_position] = 0.0 
+    cls_att = np.flip(att[:, s_position, t_positions], axis=0)
     
     xticklb = [tokens_list[i] for i in t_positions]
     yticklb = [str(i) if i%2 ==0 else '' for i in np.arange(att.shape[0],0, -1)]
     
-    # O cmap agora vai distribuir as cores desconsiderando o valor gigante da auto-atenção
     ax = sns.heatmap(cls_att, xticklabels=xticklb, yticklabels=yticklb, cmap="YlOrRd")
     return ax
 
@@ -44,11 +40,11 @@ def convert_adjmat_tomats(adjmat, n_layers, l):
    return mats
 
 
-pretrained_weights = 'Qwen/Qwen2.5-32B-Instruct'
+pretrained_weights = 'gpt2'
 model_id = pretrained_weights.split("/")[-1]
-family = 'qwen'
+family = 'gpt'
 print(f"model: {model_id}, family: {family}")
-IMAGES_DIR = Path(f"images/{family}/{model_id}/planets")
+IMAGES_DIR = Path(f"images/legacy/{family}/{pretrained_weights}")
 IMAGES_DIR.mkdir(exist_ok=True, parents=True)
 model = AutoModelForCausalLM.from_pretrained(pretrained_weights,
                                              output_hidden_states=True,
@@ -58,27 +54,40 @@ tokenizer = AutoTokenizer.from_pretrained(pretrained_weights, use_fast=True)
 
 
 sentences = {}
-sentences[0] = "the chemical symbol for gold is"
 
-sentences[1] = "the chemical symbol for gold is:"
+sentences[0] = "He talked to her about his book"
 
-sentences[2] = "the chemical symbol for silver is"
+sentences[1] = "She asked the doctor about her"
 
-sentences[3] = "the chemical symbol for silver is:"
+sentences[2] = "The author talked to Sara about his"
 
-sentences[4] = "the chemical symbol for silver is"
+sentences[3] = "John tried to convince Mary of his love and brought flowers for "
 
-sentences[5] = "the chemical symbol for iron is:"
+sentences[4] = "Mary convinced John of her love"
 
-sentences[6] = "the chemical symbol for water is"
+sentences[5] = "Barack Obama was the president of the"
 
-sentences[7] = "the chemical symbol for water is:"
+sentences[6] = "Artificial intelligence is the field of study that"
 
-sentences[8] = "the chemical symbol for sodium is"
+sentences[7] = "Why is the sky blue?"
 
-sentences[9] = "the chemical symbol for sodium is:"
+sentences[8] = "If Paul's wife is Mary, Mary's husband is"
 
+sentences[9] = "The capital of France is"
 
+sentences[10] = "Tell the name of the capital of France"
+
+sentences[11] = "The biggest city of France is"
+
+sentences[12] = "The capital of Japan is"
+
+sentences[13] = "Best japaneses food is"
+
+sentences[14] = "Japanese best food"
+
+sentences[15] = "City of France is"
+
+sentences[16] = "France of city is"
 
 for ex_id in range(len(sentences)):
     OUTPUT_DIR = IMAGES_DIR / str(ex_id)
@@ -88,8 +97,7 @@ for ex_id in range(len(sentences)):
     tokens =  tokenizer.tokenize(sentence)
 
     # tokeniza a sentença
-    tf_input_ids = [tokenizer.eos_token_id] + tokenizer.encode(sentence)
-    tokens = [tokenizer.eos_token] + tokenizer.tokenize(sentence)
+    tf_input_ids = tokenizer.encode(sentence)
 
     # transforma em um batch de sentença única
     input_ids = torch.tensor([tf_input_ids])
@@ -104,13 +112,8 @@ for ex_id in range(len(sentences)):
     _attentions = [att.detach().numpy() for att in all_attentions] # transforma em array
     # 12 camadas, 1 batch, 12 cabeças, LXL
 
-    # elimina a camada de batch
+    # mata a camada de batch
     attentions_mat = np.asarray(_attentions)[:,0]
-    attentions_mat = attentions_mat[:, :, 1:, 1:]
-
-    #ajuste para tirar o token eos
-    tokens = tokens[1:] 
-    tf_input_ids = tf_input_ids[1:]
 
     print(input_ids)
     print(tokens)
@@ -163,17 +166,8 @@ for ex_id in range(len(sentences)):
     for i in range(len(tokens)):
         t_list.append(i)
     t_pos= tuple(t_list)
-    attentions_mat_normalized = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
-    # print(f"type:\n{type(attentions_mat_normalized)}")
-    # print(f"attentions_mat_normalized:\n{attentions_mat_normalized}\nshape:{attentions_mat_normalized.shape}")
-    # print(f"attentions_mat_normalized array:\n{np.array(attentions_mat_normalized)}")
-    for camada in range(attentions_mat_normalized.shape[0]):
-        for j in range(attentions_mat_normalized.shape[-1]):
-            attentions_mat_normalized[camada,:,j] = attentions_mat_normalized[camada,:,j] / (attentions_mat_normalized.shape[-1] - j)
-    # print(f"attentions_mat_normalized:\n{attentions_mat_normalized}")
-    
     plot_attention_heatmap(
-        attentions_mat_normalized, 
+        attentions_mat.sum(axis=1)/attentions_mat.shape[1], 
         s_position=len(tf_input_ids)-1, 
         t_positions=t_pos, 
         tokens_list=tokens)
@@ -182,10 +176,9 @@ for ex_id in range(len(sentences)):
     plt.savefig(OUTPUT_DIR /f'rat_{model_id}_att_{ex_id}.png', format='png', transparent=True, dpi=360, bbox_inches='tight')
     plt.close()
 
-    #res_att_mat -> é um np array com a média das cabeças de todas as camadas 
     res_att_mat = attentions_mat.sum(axis=1)/attentions_mat.shape[1]
 
-    res_att_mat = res_att_mat + 0.5*np.eye(res_att_mat.shape[1])[None,...]
+    res_att_mat = res_att_mat + 0.1*np.eye(res_att_mat.shape[1])[None,...]
 
     # renormaliza, mesma coisa de dividir por dois
     res_att_mat = res_att_mat / res_att_mat.sum(axis=-1)[...,None]
